@@ -53,12 +53,12 @@ For example, the <Component> component can be implemented like so:
 
 ```tsx
 import { MantineProvider } from "@mantine/core";
-import { theme } from "ala-mantine";
+import { CoolComponent } from "ala-mantine";
 
 function App() {
   return (
     <div>
-      <Component isComponent={true} />
+      <CoolComponent isComponent={true} />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { MantineColorsTuple } from "@mantine/core";
+import { MantineColorsTuple, VariantColorsResolver, defaultVariantColorsResolver } from "@mantine/core";
 
 export const colors: Record<string, MantineColorsTuple> = {
   flamingo: [
@@ -109,4 +109,21 @@ export const colors: Record<string, MantineColorsTuple> = {
     "#9b2f4d",
     "#892541",
   ],
+};
+
+
+export const variantColorResolver: VariantColorsResolver = (input) => {
+  const defaultResolvedColors = defaultVariantColorsResolver(input);
+
+  // Add new variants support
+  if (input.variant === 'ala') {
+    return {
+      background: 'var(--mantine-color-red-9)',
+      hover: 'var(--mantine-color-red-8)',
+      color: 'var(--mantine-color-white)',
+      border: 'none',
+    };
+  }
+
+  return defaultResolvedColors;
 };

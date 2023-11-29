@@ -5,6 +5,7 @@ import { colors } from "./colours";
 export const theme = createTheme({
   // Colour configutation
   colors,
+  // variantColorResolver,
   primaryColor: "rust",
   // Font configuration
   fontFamily: "Roboto, sans-serif",

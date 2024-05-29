@@ -58,7 +58,7 @@ const components = {
     },
   }),
   Tabs: Tabs.extend({
-    // classNames: tabsClasses,
+    classNames: tabsClasses,
     defaultProps: {
       variant: "ala",
     },

@@ -1,0 +1,119 @@
+.root {
+  font-weight: 500;
+
+  &[data-variant="ala-primary"] {
+    background-color: transparent;
+    border: 1px solid var(--mantine-color-rust-6);
+
+    padding: 10px 14px 10px 14px;
+    text-align: left;
+
+    @mixin light {
+      color: var(--mantine-color-rust-6);
+      & .label {
+        color: var(--mantine-color-charcoal-9);
+      }
+    }
+
+    @mixin dark {
+      color: white;
+    }
+
+    &:hover {
+      color: var(--mantine-color-charcoal-9);
+      border-color: var(--mantine-color-flamingo-4);
+      background-color: var(--mantine-color-flamingo-4);
+    }
+
+    &:active {
+      color: white;
+      border-color: var(--mantine-color-rust-6);
+      background-color: var(--mantine-color-rust-6);
+      transform: none;
+    }
+
+    &:active .label {
+      color: white;
+    }
+
+    & .inner {
+      justify-content: space-between;
+    }
+  }
+
+  &[data-variant="ala-secondary"] {
+    background-color: transparent;
+    border-radius: 18px;
+
+    padding: 10px 14px 10px 14px;
+    text-align: left;
+
+    @mixin light {
+      color: var(--mantine-color-charcoal-9);
+      border: 1px solid var(--mantine-color-charcoal-9);
+    }
+
+    @mixin dark {
+      color: white;
+      border: 1px solid white;
+    }
+
+    &:hover {
+      color: white;
+      border-color: var(--mantine-color-grey-8);
+      background-color: var(--mantine-color-grey-8);
+    }
+
+    &:active {
+      color: white;
+      transform: none;
+
+      @mixin light {
+        border-color: var(--mantine-color-charcoal-9);
+        background-color: var(--mantine-color-charcoal-9);
+      }
+
+      @mixin dark {
+        border-color: var(--mantine-color-rust-6);
+        background-color: var(--mantine-color-rust-6);
+      }
+    }
+  }
+
+  &[data-variant="ala-filter"] {
+    background-color: transparent;
+
+    padding: 10px 14px 10px 14px;
+
+    @mixin light {
+      color: var(--mantine-color-charcoal-9);
+      border: 1px solid var(--mantine-color-light-grey-2);
+    }
+
+    @mixin dark {
+      color: white;
+      border: 1px solid white;
+    }
+
+    &:hover {
+      color: white;
+      border-color: var(--mantine-color-grey-8);
+      background-color: var(--mantine-color-grey-8);
+    }
+
+    &:active {
+      color: white;
+      transform: none;
+
+      @mixin light {
+        border-color: var(--mantine-color-charcoal-9);
+        background-color: var(--mantine-color-charcoal-9);
+      }
+
+      @mixin dark {
+        border-color: var(--mantine-color-rust-6);
+        background-color: var(--mantine-color-rust-6);
+      }
+    }
+  }
+}

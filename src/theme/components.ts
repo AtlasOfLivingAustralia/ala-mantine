@@ -1,17 +1,35 @@
 "use client";
-import { Button, Card, Text, Anchor, Pagination, TabsTab } from "@mantine/core";
+import {
+  Alert,
+  Button,
+  Card,
+  Text,
+  Pagination,
+  Table,
+  Tabs,
+} from "@mantine/core";
 
-export const components = {
+import tabsClasses from "./classes/Tabs.module.css";
+import buttonClasses from "./classes/Button.module.css";
+import tableClasses from "./classes/Table.module.css";
+
+import colours, { mainShades } from "./colours";
+
+const components = {
   Button: Button.extend({
+    classNames: buttonClasses,
     defaultProps: {
-      color: "flamingo.4",
-      radius: 6,
+      variant: "ala-primary",
+    },
+  }),
+  Alert: Alert.extend({
+    defaultProps: {
+      radius: 5,
     },
     vars: () => ({
-      // root: {
-      //   '--button-bg': '#f26649',
-      //   '--button-hover': '#c44d34',
-      // },
+      root: {
+        "--alert-bg": colours.honey[mainShades.honey],
+      },
     }),
   }),
   Card: Card.extend({
@@ -23,12 +41,6 @@ export const components = {
   Text: Text.extend({
     defaultProps: {
       size: "sm",
-      lh: 1.5,
-    },
-  }),
-  Anchor: Anchor.extend({
-    defaultProps: {
-      c: "flamingo.4",
     },
   }),
   Pagination: Pagination.extend({
@@ -38,9 +50,19 @@ export const components = {
       },
     }),
   }),
-  TabsTab: TabsTab.extend({
+  Table: Table.extend({
+    classNames: tableClasses,
     defaultProps: {
-      color: "flamingo.4",
+      striped: "even",
+      withRowBorders: false,
+    },
+  }),
+  Tabs: Tabs.extend({
+    // classNames: tabsClasses,
+    defaultProps: {
+      variant: "ala",
     },
   }),
 };
+
+export default components;

@@ -1,17 +1,28 @@
 import { createTheme } from "@mantine/core";
-import { components } from "./components";
-import { colors } from "./colours";
 
-export const theme = createTheme({
+// Theme override imports
+import components from "./components";
+import colors from "./colours";
+import typography from "./typography";
+
+export const mobile = createTheme({
   // Colour configutation
   colors,
   // variantColorResolver,
   primaryColor: "rust",
-  // Font configuration
-  fontFamily: "Roboto, sans-serif",
-  headings: {
-    fontFamily: "Roboto, sans-serif",
-  },
   // Component customisation
   components,
+  // Typography configuration
+  ...typography["mobile"],
+});
+
+export const desktop = createTheme({
+  // Colour configutation
+  colors,
+  // variantColorResolver,
+  primaryColor: "rust",
+  // Component customisation
+  components,
+  // Typography configuration
+  ...typography["desktop"],
 });

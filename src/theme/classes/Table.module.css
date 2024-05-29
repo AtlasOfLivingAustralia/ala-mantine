@@ -1,0 +1,30 @@
+.tr[data-striped="odd"] {
+  &:nth-child(odd) {
+    @mixin light {
+      background-color: var(--mantine-color-concrete-0);
+    }
+    @mixin dark {
+      background-color: var(--mantine-color-dark-grey-two-9);
+    }
+  }
+}
+
+.tr[data-striped="even"] {
+  &:nth-child(even) {
+    @mixin light {
+      background-color: var(--mantine-color-concrete-0);
+    }
+    @mixin dark {
+      background-color: var(--mantine-color-dark-grey-two-9);
+    }
+  }
+}
+
+.thead {
+  @mixin light {
+    border-bottom: 1px solid var(--mantine-color-charcoal-9);
+  }
+  @mixin dark {
+    border-bottom: 1px solid white;
+  }
+}

@@ -1,25 +1,24 @@
 "use client";
 import {
+  Accordion,
   Alert,
+  Anchor,
   Button,
   Card,
   Text,
-  Pagination,
   Table,
   Tabs,
+  Title,
 } from "@mantine/core";
 
-import tabsClasses from "./classes/Tabs.module.css";
-import buttonClasses from "./classes/Button.module.css";
-import tableClasses from "./classes/Table.module.css";
-
 import colours, { mainShades } from "./colours";
+import classes from "./classes";
 
 const components = {
-  Button: Button.extend({
-    classNames: buttonClasses,
+  Accordion: Accordion.extend({
+    classNames: classes.accordion,
     defaultProps: {
-      variant: "ala-primary",
+      variant: "ala",
     },
   }),
   Alert: Alert.extend({
@@ -32,33 +31,39 @@ const components = {
       },
     }),
   }),
+  Anchor: Anchor.extend({
+    classNames: classes.anchor,
+    defaultProps: {
+      variant: "ala",
+    },
+  }),
+  Button: Button.extend({
+    classNames: classes.button,
+    defaultProps: {
+      variant: "ala-primary",
+    },
+  }),
   Card: Card.extend({
     defaultProps: {
       radius: 12,
       withBorder: true,
     },
   }),
-  Text: Text.extend({
-    defaultProps: {
-      size: "sm",
-    },
+  Title: Title.extend({
+    classNames: classes.title,
   }),
-  Pagination: Pagination.extend({
-    vars: () => ({
-      root: {
-        "--pagination-active-bg": "#f26649",
-      },
-    }),
+  Text: Text.extend({
+    classNames: classes.text,
   }),
   Table: Table.extend({
-    classNames: tableClasses,
+    classNames: classes.table,
     defaultProps: {
       striped: "even",
       withRowBorders: false,
     },
   }),
   Tabs: Tabs.extend({
-    classNames: tabsClasses,
+    classNames: classes.tabs,
     defaultProps: {
       variant: "ala",
     },

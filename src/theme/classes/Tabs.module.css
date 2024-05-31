@@ -1,6 +1,6 @@
 .tab {
   &[data-variant="ala"] {
-    border-bottom: 3px solid transparent;
+    box-sizing: border-box;
 
     &:hover {
       border-bottom-color: var(--mantine-color-rust-6);
@@ -11,7 +11,7 @@
     }
 
     &[data-active] {
-      border-bottom-color: var(--mantine-color-rust-6);
+      border-bottom: 3px solid var(--mantine-color-rust-6);
 
       & .tabLabel {
         color: var(--mantine-color-rust-6);

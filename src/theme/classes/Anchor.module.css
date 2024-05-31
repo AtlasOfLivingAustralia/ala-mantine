@@ -1,0 +1,17 @@
+.root {
+  text-decoration: underline;
+
+  @mixin light {
+    color: var(--mantine-color-ocean-9);
+    &:hover {
+      color: var(--mantine-color-peacock-9);
+    }
+  }
+
+  @mixin dark {
+    color: var(--mantine-color-glacial-2);
+    &:hover {
+      color: var(--mantine-color-seafoam-4);
+    }
+  }
+}

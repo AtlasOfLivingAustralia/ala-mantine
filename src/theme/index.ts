@@ -11,4 +11,6 @@ export const theme = createTheme({
   primaryColor: "rust",
   // Component customisation
   components,
+  // Typography
+  fontFamily: "Roboto",
 });

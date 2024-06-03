@@ -1,0 +1,53 @@
+.root {
+  &[data-variant="ala"] {
+    box-sizing: border-box;
+
+    & .input {
+      @mixin light {
+        border: 2px solid var(--mantine-color-charcoal-9);
+        &:checked {
+          background-color: var(--mantine-color-charcoal-9);
+        }
+      }
+      @mixin dark {
+        border: 2px solid white;
+        &:checked {
+          background-color: white;
+        }
+      }
+    }
+
+    & .icon {
+      @mixin light {
+        color: white;
+      }
+      @mixin dark {
+        color: var(--mantine-color-charcoal-9);
+      }
+    }
+
+    & .label {
+      font-size: 1rem;
+      line-height: 1.375rem;
+
+      @mixin light {
+        color: var(--mantine-color-charcoal-9);
+      }
+      @mixin dark {
+        color: white;
+      }
+    }
+
+    & .description {
+      font-size: 0.875rem;
+      line-height: 1.125;
+
+      @mixin light {
+        color: var(--mantine-color-charcoal-9);
+      }
+      @mixin dark {
+        color: white;
+      }
+    }
+  }
+}

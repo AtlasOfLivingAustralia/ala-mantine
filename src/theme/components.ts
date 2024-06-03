@@ -4,14 +4,15 @@ import {
   Alert,
   Anchor,
   Button,
-  Card,
+  Checkbox,
+  Divider,
+  Image,
   Text,
   Table,
   Tabs,
   Title,
 } from "@mantine/core";
 
-import colours, { mainShades } from "./colours";
 import classes from "./classes";
 
 const components = {
@@ -22,14 +23,10 @@ const components = {
     },
   }),
   Alert: Alert.extend({
+    classNames: classes.alert,
     defaultProps: {
-      radius: 5,
+      variant: "ala",
     },
-    vars: () => ({
-      root: {
-        "--alert-bg": colours.honey[mainShades.honey],
-      },
-    }),
   }),
   Anchor: Anchor.extend({
     classNames: classes.anchor,
@@ -43,10 +40,18 @@ const components = {
       variant: "ala-primary",
     },
   }),
-  Card: Card.extend({
+  Checkbox: Checkbox.extend({
+    classNames: classes.checkbox,
     defaultProps: {
-      radius: 12,
-      withBorder: true,
+      variant: "ala",
+    },
+  }),
+  Divider: Divider.extend({
+    classNames: classes.divider,
+  }),
+  Image: Image.extend({
+    defaultProps: {
+      radius: 10,
     },
   }),
   Title: Title.extend({

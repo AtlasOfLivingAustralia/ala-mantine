@@ -38,6 +38,12 @@
 
     & .inner {
       justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    & .label {
+      text-wrap: wrap;
+      align-items: flex-start;
     }
   }
 

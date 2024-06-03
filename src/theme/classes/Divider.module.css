@@ -1,0 +1,10 @@
+/* .root {
+  @mixin light {
+    border-color: var(--mantine-color-light-grey-2);
+  }
+
+  @mixin dark {
+    border-color: var(--mantine-color-grey-8);
+  }
+} */
+/* this is mad ugly */

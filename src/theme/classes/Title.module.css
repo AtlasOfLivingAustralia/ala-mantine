@@ -1,6 +1,14 @@
 .root {
   font-family: Roboto, sans-serif;
 
+  @mixin light {
+    color: var(--mantine-color-charcoal-9);
+  }
+
+  @mixin dark {
+    color: white;
+  }
+
   /* Mobile Font Sizes */
   @media (max-width: 48em) {
     &:is(h1) {

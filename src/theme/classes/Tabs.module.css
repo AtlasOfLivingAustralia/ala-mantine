@@ -1,6 +1,11 @@
 .tab {
   &[data-variant="ala"] {
     box-sizing: border-box;
+    padding: 15px;
+
+    & .tabLabel {
+      line-height: 1.125rem;
+    }
 
     &:hover {
       border-bottom-color: var(--mantine-color-rust-6);
@@ -12,6 +17,8 @@
 
     &[data-active] {
       border-bottom: 3px solid var(--mantine-color-rust-6);
+      padding-top: 16.5px;
+      padding-bottom: 13.5px;
 
       & .tabLabel {
         color: var(--mantine-color-rust-6);

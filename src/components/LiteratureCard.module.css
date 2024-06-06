@@ -1,0 +1,10 @@
+.root {
+  padding: 15px;
+
+  @mixin light {
+    background-color: var(--mantine-color-concrete-0);
+  }
+  @mixin dark {
+    background-color: var(--mantine-color-dark-grey-one-9);
+  }
+}

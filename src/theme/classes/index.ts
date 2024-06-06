@@ -4,6 +4,7 @@ import anchor from "./Anchor.module.css";
 import button from "./Button.module.css";
 import checkbox from "./Checkbox.module.css";
 import divider from "./Divider.module.css";
+import radio from "./Radio.module.css";
 import table from "./Table.module.css";
 import tabs from "./Tabs.module.css";
 import text from "./Text.module.css";
@@ -16,6 +17,7 @@ export default {
   button,
   checkbox,
   divider,
+  radio,
   table,
   tabs,
   text,

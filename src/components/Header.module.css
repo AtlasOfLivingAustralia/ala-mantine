@@ -1,0 +1,24 @@
+.header {
+  @mixin light {
+    background-color: white;
+  }
+  @mixin dark {
+    background-color: black;
+  }
+}
+
+.group {
+  /* Mobile Font Sizes */
+  @media (max-width: 48em) {
+    height: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  /* Desktop Font Sizes */
+  @media (min-width: 48em) {
+    height: 77px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

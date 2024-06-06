@@ -7,6 +7,7 @@ import {
   Checkbox,
   Divider,
   Image,
+  Radio,
   Text,
   Table,
   Tabs,
@@ -52,6 +53,12 @@ const components = {
   Image: Image.extend({
     defaultProps: {
       radius: 10,
+    },
+  }),
+  Radio: Radio.extend({
+    classNames: classes.radio,
+    defaultProps: {
+      variant: "ala",
     },
   }),
   Title: Title.extend({

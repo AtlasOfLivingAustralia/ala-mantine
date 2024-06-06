@@ -1,3 +1,7 @@
+.table {
+  table-layout: fixed;
+}
+
 .tr[data-striped="odd"] {
   &:nth-child(odd) {
     @mixin light {
@@ -18,6 +22,11 @@
       background-color: var(--mantine-color-dark-grey-two-9);
     }
   }
+}
+
+.td :global(.mantine-Anchor-root) {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
 }
 
 .thead {

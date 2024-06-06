@@ -24,7 +24,7 @@ export const mainShades = {
   peacock: 9,
   glacial: 2,
   eggplant: 9,
-  pinot: 0,
+  pinot: 9,
   "light-grey": 2,
   "dark-grey-one": 9,
   "dark-grey-two": 9,

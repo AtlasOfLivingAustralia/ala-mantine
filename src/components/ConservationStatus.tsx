@@ -1,6 +1,8 @@
 import React from "react";
 import { Text, Group, ThemeIcon } from "@mantine/core";
 
+import classes from "./ConservationStatus.module.css";
+
 const statuses = {
   EX: {
     label: "Extinct",
@@ -39,21 +41,14 @@ const statuses = {
   },
 };
 
-export type ConservationStatusKey =
-  | "EX"
-  | "EW"
-  | "CR"
-  | "EN"
-  | "VU"
-  | "NT"
-  | "LC";
+type ConservationStatusKey = "EX" | "EW" | "CR" | "EN" | "VU" | "NT" | "LC";
 
 interface ConservationStatusProps {
   status: ConservationStatusKey;
   withLabel?: boolean;
 }
 
-export function ConservationStatus({
+function ConservationStatus({
   status,
   withLabel,
 }: ConservationStatusProps): React.ReactElement {
@@ -61,7 +56,7 @@ export function ConservationStatus({
 
   return (
     <Group gap={8}>
-      <ThemeIcon radius={17.5} size={35} bg={backgroundColour}>
+      <ThemeIcon classNames={classes} radius={17.5} bg={backgroundColour}>
         <Text size="sm" fw="bold" c={textColour}>
           {status}
         </Text>
@@ -70,3 +65,5 @@ export function ConservationStatus({
     </Group>
   );
 }
+
+export { ConservationStatus, ConservationStatusKey };

@@ -1,0 +1,15 @@
+.root {
+  /* Mobile Sizes */
+  @media (max-width: 48em) {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+  }
+
+  /* Desktop Sizes */
+  @media (min-width: 48em) {
+    width: 35px;
+    height: 35px;
+  }
+}

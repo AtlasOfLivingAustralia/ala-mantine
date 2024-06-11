@@ -89,7 +89,7 @@
   &[data-variant="ala-filter"] {
     background-color: transparent;
 
-    padding: 10px 14px 10px 14px;
+    padding: 8px 19px 10px 19px;
 
     @mixin light {
       color: var(--mantine-color-charcoal-9);
@@ -105,6 +105,26 @@
       color: white;
       border-color: var(--mantine-color-grey-8);
       background-color: var(--mantine-color-grey-8);
+    }
+
+    & .label {
+      font-weight: normal;
+    }
+
+    /* Mobile Font Sizes */
+    @media (max-width: 48em) {
+      & .label {
+        font-size: 0.75rem;
+        line-height: 1rem;
+      }
+    }
+
+    /* Desktop Font Sizes */
+    @media (min-width: 48em) {
+      & .label {
+        font-size: 1rem;
+        line-height: 1.375rem;
+      }
     }
 
     &:active {

@@ -1,11 +1,13 @@
 .root {
   &[data-variant="ala"] {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     box-sizing: border-box;
     border-radius: 10px;
+
     @mixin light {
+      background-color: white;
       border: 1px solid var(--mantine-color-light-grey-2);
     }
 

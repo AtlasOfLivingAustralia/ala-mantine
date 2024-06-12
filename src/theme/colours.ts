@@ -4,7 +4,7 @@ import {
   defaultVariantColorsResolver,
 } from "@mantine/core";
 
-export const mainShades = {
+export const mainShades: Record<string, number> = {
   flamingo: 4,
   rust: 6,
   grey: 8,

@@ -41,7 +41,14 @@ const statuses = {
   },
 };
 
-type ConservationStatusKey = "EX" | "EW" | "CR" | "EN" | "VU" | "NT" | "LC";
+export type ConservationStatusKey =
+  | "EX"
+  | "EW"
+  | "CR"
+  | "EN"
+  | "VU"
+  | "NT"
+  | "LC";
 
 interface ConservationStatusProps {
   status: ConservationStatusKey;
@@ -66,4 +73,4 @@ function ConservationStatus({
   );
 }
 
-export { ConservationStatus, ConservationStatusKey };
+export { ConservationStatus };

@@ -5,6 +5,8 @@
 - [ALA Mantine Library](#ala-mantine-library)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+    - [Local](#local)
+    - [yarn / npm](#yarn--npm)
   - [Usage](#usage)
     - [Theme](#theme)
     - [Components](#components)
@@ -19,6 +21,16 @@ This library requires the following peer dependencies:
 ## Installation
 
 **NOTE: This package exports the Mantine theme and components as untransplied TypeScript, a toolchain/framework such as Vite/Next.js is needed to use it.**
+
+### Local
+
+[Yalc](https://github.com/wclr/yalc) is needed to use `ala-mantine` locally. See [here](https://github.com/wclr/yalc?tab=readme-ov-file#installation) for Yalc installation documentation. Once installed, in the `ala-mantine` root folder, run `yalc publish`.
+
+In your dependant application, run `yalc add ala-mantine`, followed by `yarn` to install it as a dependency.
+
+Once you've made changes to `ala-mantine`, run `yalc push` from the `ala-mantine` root folder to automatically push all changes to the dependent applications.
+
+### yarn / npm
 
 This package can be installed with yarn / npm using the following command(s):
 

@@ -1,0 +1,35 @@
+.quicklight {
+  /* Mobile Sizes */
+  @media (max-width: 48em) {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Desktop Sizes */
+  @media (min-width: 48em) {
+    width: 30px;
+    height: 30px;
+  }
+
+  @mixin dark {
+    display: none;
+  }
+}
+
+.quickdark {
+  /* Mobile Sizes */
+  @media (max-width: 48em) {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Desktop Sizes */
+  @media (min-width: 48em) {
+    width: 30px;
+    height: 30px;
+  }
+
+  @mixin light {
+    display: none;
+  }
+}

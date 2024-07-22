@@ -26,7 +26,7 @@
     }
     &[data-size="md"] {
       font-size: 0.875rem;
-      line-height: 1.125rem;
+      line-height: 1.25rem;
     }
     &[data-size="sm"] {
       font-size: 0.75rem;
@@ -53,11 +53,11 @@
     }
     &[data-size="md"] {
       font-size: 1rem;
-      line-height: 1.25rem;
+      line-height: 1.5rem;
     }
     &[data-size="sm"] {
       font-size: 0.875rem;
-      line-height: 1.125rem;
+      line-height: 1.25rem;
     }
     &[data-size="xs"] {
       font-size: 0.75rem;

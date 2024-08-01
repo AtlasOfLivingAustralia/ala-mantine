@@ -1,0 +1,262 @@
+[
+  {
+    "value": "records",
+    "title": "Species & records",
+    "description": "Learn about species, their characteristics, where they have been found, and more. Search, view and download species occurrence records or datasets.",
+    "colOneLinks": [
+      {
+        "href": "_1",
+        "text": "Search species"
+      },
+      {
+        "href": "https://biocache.ala.org.au/search#tab_simpleSearch",
+        "text": "Search and download records"
+      },
+      {
+        "href": "https://collections.ala.org.au/datasets",
+        "text": "Search datasets"
+      }
+    ],
+    "colTwoLinks": [
+      {
+        "href": "_1",
+        "text": "Search collections"
+      },
+      {
+        "href": "https://specimens.ala.org.au/",
+        "text": "Browse museum and herbaria specimens",
+        "nested": true
+      },
+      {
+        "href": "https://collections.ala.org.au/",
+        "text": "Find a natural history collection",
+        "nested": true
+      },
+      {
+        "href": "_1_3",
+        "text": "Specialised collections",
+        "nested": true
+      },
+      {
+        "href": "https://lists.ala.org.au/iconic-species",
+        "text": "Australian iconic species"
+      },
+      {
+        "href": "https://profiles.ala.org.au/",
+        "text": "Curated species information"
+      }
+    ]
+  },
+  {
+    "value": "explore",
+    "title": "Explore by location",
+    "description": "Discover species in your local area or a defined region. Interrogate and explore relationships between species, location and environment with our advanced mapping tool.",
+    "colOneLinks": [
+      {
+        "href": "https://biocache.ala.org.au/explore/your-area",
+        "text": "Address or location"
+      },
+      {
+        "href": "https://regions.ala.org.au/",
+        "text": "Management areas"
+      },
+      {
+        "href": "https://spatial.ala.org.au/",
+        "text": "Advanced mapping"
+      }
+    ]
+  },
+  {
+    "value": "contribute",
+    "title": "Contribute data",
+    "description": "Share your dataset or species observations with the ALA, or contribute to digitisation projects. Discover, participate in, or start data collection projects.",
+    "colOneLinks": [
+      {
+        "href": "https://support.ala.org.au/support/solutions/articles/6000261427-sharing-a-dataset-with-the-ala",
+        "text": "Share a dataset"
+      },
+      {
+        "href": "https://lists.ala.org.au/public/speciesLists",
+        "text": "Upload or find a list of species"
+      },
+      {
+        "href": "https://www.ala.org.au/biocollect/",
+        "text": "Set up a citizen science project"
+      }
+    ],
+    "colTwoLinks": [
+      {
+        "href": "https://volunteer.ala.org.au/",
+        "text": "Help digitise collections"
+      },
+      {
+        "href": "https://www.ala.org.au/home/record-a-sighting/",
+        "text": "Record a sighting"
+      },
+      {
+        "href": "https://biocollect.ala.org.au/acsa",
+        "text": "Discover data collection projects"
+      }
+    ]
+  },
+  {
+    "value": "code",
+    "title": "Code & API",
+    "description": "Access and interrogate data in the ALA using R or Python, and learn from data visualisation case studies. Explore our API documentation portal for developers.",
+    "colOneLinks": [
+      {
+        "href": "https://galah.ala.org.au/",
+        "text": "Access data using R and Python"
+      },
+      {
+        "href": "https://docs.ala.org.au/",
+        "text": "API documentation"
+      },
+      {
+        "href": "https://github.com/AtlasOfLivingAustralia/",
+        "text": "GitHub repository"
+      }
+    ],
+    "colTwoLinks": [
+      {
+        "href": "https://sds.ala.org.au/",
+        "text": "Sensitive Data Service"
+      },
+      {
+        "href": "https://labs.ala.org.au/",
+        "text": "Data visualisation case studies"
+      }
+    ]
+  },
+  {
+    "value": "about",
+    "title": "About us",
+    "description": "Learn more about the ALA, our governance, strategy, news and any employment or funding opportunities.",
+    "colOneLinks": [
+      {
+        "href": "https://www.ala.org.au/about-ala/",
+        "text": "About us"
+      },
+      {
+        "href": "https://www.ala.org.au/contact-us/",
+        "text": "Contact us"
+      },
+      {
+        "href": "_3",
+        "text": "Work with us"
+      },
+      {
+        "href": "https://www.ala.org.au/careers/",
+        "text": "Careers",
+        "nested": true
+      },
+      {
+        "href": "https://www.ala.org.au/internships/",
+        "text": "Internships",
+        "nested": true
+      },
+      {
+        "href": "_4",
+        "text": "Grants and opportunities"
+      },
+      {
+        "href": "ttps://living-atlases.gbif.org/",
+        "text": "Living Atlases",
+        "nested": true
+      },
+      {
+        "href": "https://www.ala.org.au/abdmp/",
+        "text": "Fund your data project",
+        "nested": true
+      }
+    ],
+    "colTwoLinks": [
+      {
+        "href": "https://www.ala.org.au/blog/",
+        "text": "News and events"
+      },
+      {
+        "href": "https://www.ala.org.au/blog/",
+        "text": "News archive",
+        "nested": true
+      },
+      {
+        "href": "_2",
+        "text": "Governance and publications"
+      },
+      {
+        "href": "https://www.ala.org.au/governance/",
+        "text": "Governance and advisory board",
+        "nested": true
+      },
+      {
+        "href": "_2_2",
+        "text": "Strategy and reports",
+        "nested": true
+      },
+      {
+        "href": "https://dashboard.ala.org.au/",
+        "text": "Our data at a glance",
+        "nested": true
+      },
+      {
+        "href": "https://www.ala.org.au/publications/",
+        "text": "Case studies",
+        "nested": true
+      },
+      {
+        "href": "https://www.ala.org.au/ala-cited-publications/",
+        "text": "ALA-cited publications",
+        "nested": true
+      }
+    ]
+  },
+  {
+    "value": "help",
+    "title": "Help & resources",
+    "description": "Access support and training for ALA tools and services. Learn more about ALA's specialised work programs in each of our hubs.",
+    "colOneLinks": [
+      {
+        "href": "https://support.ala.org.au/support/home",
+        "text": "Help articles"
+      },
+      {
+        "href": "https://support.ala.org.au/support/solutions/6000137994",
+        "text": "Data help",
+        "nested": true
+      },
+      {
+        "href": "https://support.ala.org.au/support/solutions/6000138053",
+        "text": "Tools and apps help",
+        "nested": true
+      },
+      {
+        "href": "https://support.ala.org.au/support/solutions/6000138349",
+        "text": "Spatial portal help",
+        "nested": true
+      },
+      {
+        "href": "https://www.ala.org.au/education-resources/",
+        "text": "Classroom resources"
+      },
+      {
+        "href": "https://www.ala.org.au/ala-logo-and-identity/",
+        "text": "ALA logo and identity"
+      }
+    ],
+    "colTwoLinks": [
+      {
+        "href": "_1",
+        "text": "Training resources Hub"
+      },
+      {
+        "href": "https://www.ala.org.au/biosecurity/",
+        "text": "Biosecurity Hub"
+      },
+      {
+        "href": "https://www.ala.org.au/indigenous-ecological-knowledge/",
+        "text": "Indigenous Engagement Hub (IEK)"
+      }
+    ]
+  }
+]

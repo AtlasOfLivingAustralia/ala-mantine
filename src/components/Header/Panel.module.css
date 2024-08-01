@@ -1,0 +1,35 @@
+.link:hover {
+  & :global(.mantine-Text-root) {
+    text-decoration: underline;
+
+    @mixin light {
+      color: var(--mantine-color-rust-6);
+    }
+
+    @mixin dark {
+      color: var(--mantine-color-flamingo-4);
+    }
+  }
+
+  & svg {
+    @mixin light {
+      color: var(--mantine-color-rust-6);
+    }
+
+    @mixin dark {
+      color: var(--mantine-color-flamingo-4);
+    }
+  }
+}
+
+.icon {
+  vertical-align: text-top;
+  margin-left: 5px;
+
+  @mixin light {
+    color: var(--mantine-color-grey-8);
+  }
+  @mixin dark {
+    color: var(--mantine-color-silver-4);
+  }
+}

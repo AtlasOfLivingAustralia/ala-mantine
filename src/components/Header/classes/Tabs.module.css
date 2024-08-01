@@ -1,0 +1,64 @@
+.tab {
+  background: transparent;
+
+  padding: 15px 0px 15px 0px;
+
+  &:not(:last-of-type) {
+    margin-right: 30px;
+  }
+
+  border: none;
+  border-bottom: 2px solid transparent;
+
+  & .tabLabel {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.375rem;
+
+    & svg {
+      width: 1rem !important;
+      height: 1rem !important;
+      margin-left: 4px;
+      vertical-align: middle;
+
+      @mixin light {
+        color: var(--mantine-color-grey-8);
+      }
+
+      @mixin dark {
+        color: var(--mantine-color-silver-4);
+      }
+    }
+  }
+
+  &:hover,
+  &[data-active] {
+    cursor: pointer;
+
+    @mixin light {
+      border-bottom-color: var(--mantine-color-rust-6);
+    }
+
+    @mixin dark {
+      border-bottom-color: var(--mantine-color-flamingo-4);
+    }
+
+    /* & .tabLabel {
+      @mixin light {
+        color: var(--mantine-color-rust-6);
+      }
+
+      @mixin dark {
+        color: var(--mantine-color-flamingo-4);
+      }
+    } */
+  }
+
+  &[data-active] {
+    & .tabLabel {
+      & svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

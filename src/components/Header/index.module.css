@@ -10,15 +10,33 @@
 .group {
   /* Mobile Sizes */
   @media (max-width: 48em) {
-    height: 80px;
+    height: 52px;
     padding-top: 15px;
     padding-bottom: 15px;
+    align-items: flex-end;
   }
 
   /* Desktop Sizes */
   @media (min-width: 48em) {
-    height: 77px;
+    height: 107px;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+}
+
+.tab {
+  position: absolute;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  top: 163.8px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  @mixin light {
+    background-color: white;
+  }
+
+  @mixin dark {
+    background-color: black;
   }
 }

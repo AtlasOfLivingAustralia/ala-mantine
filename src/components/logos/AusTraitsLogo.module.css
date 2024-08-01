@@ -1,9 +1,9 @@
 .image {
   @mixin light {
-    background-image: url("../static/austraits-light.png");
+    background-image: url("../../static/austraits-light.png");
   }
   @mixin dark {
-    background-image: url("../static/austraits-dark.png");
+    background-image: url("../../static/austraits-dark.png");
   }
 
   /* Mobile Sizes */

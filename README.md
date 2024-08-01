@@ -24,9 +24,11 @@ This library requires the following peer dependencies:
 
 ### Local
 
-[Yalc](https://github.com/wclr/yalc) is needed to use `ala-mantine` locally. See [here](https://github.com/wclr/yalc?tab=readme-ov-file#installation) for Yalc installation documentation. Once installed, in the `ala-mantine` root folder, run `yalc publish`.
+[Yalc](https://github.com/wclr/yalc) is needed to use `ala-mantine` locally. See [here](https://github.com/wclr/yalc?tab=readme-ov-file#installation) for Yalc installation documentation.
 
-In your dependant application, run `yalc add ala-mantine`, followed by `yarn` to install it as a dependency.
+1. Once installed, in the `ala-mantine` root folder, run `yalc publish`.
+2. In your dependant application, run `yalc add ala-mantine`, followed by `yarn` to install it as a dependency.
+3. PostCSS is also required in your dependant application for the component library. Please see the installation intructions [here](https://mantine.dev/getting-started/#:~:text=Install%20PostCSS%20plugins%20and%20postcss%2Dpreset%2Dmantine%3A).
 
 Once you've made changes to `ala-mantine`, run `yalc push` from the `ala-mantine` root folder to automatically push all changes to the dependent applications.
 
@@ -38,11 +40,17 @@ This package can be installed with yarn / npm using the following command(s):
 
 ## Usage
 
+> See the [ALA Mantine Demo](https://github.com/AtlasOfLivingAustralia/ala-mantine-demo) application for specific implementation examples
+
 ### Theme
 
 ALA's Mantine theme can be imported & used in your project like so:
 
 ```tsx
+// Root mantine styles
+import "@mantine/core/styles.css";
+
+// Mantine provider & theme
 import { MantineProvider } from "@mantine/core";
 import { theme } from "ala-mantine";
 
@@ -56,6 +64,8 @@ function App() {
 
 export default App;
 ```
+
+Don't forget to add the `@mantine/core/styles.css` import at the root of your application too!
 
 ### Components
 

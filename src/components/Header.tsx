@@ -2,7 +2,7 @@ import React, { PropsWithChildren } from "react";
 import { Box, Container, Group } from "@mantine/core";
 
 import classes from "./Header.module.css";
-import { AtlasLogo } from "./AtlasLogo";
+import { AtlasLogo } from "../components/logos/AtlasLogo";
 
 export function Header({
   children,

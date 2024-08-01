@@ -1,6 +1,4 @@
 // Components
-export { AtlasLogo } from "./components/AtlasLogo";
-export { AusTraitsLogo } from "./components/AusTraitsLogo";
 export { Header } from "./components/Header";
 export { LiteratureCard } from "./components/LiteratureCard";
 export {
@@ -8,8 +6,9 @@ export {
   type ConservationStatusKey,
 } from "./components/ConservationStatus";
 
-// Icons
+// Icons & logos
 export * from "./components/icons";
+export * from "./components/logos";
 
 export { theme } from "./theme";
 export { mainShades } from "./theme/colours";

@@ -1,0 +1,17 @@
+.image {
+  background-image: url("../../static/csiro.svg");
+
+  /* Mobile Sizes */
+  @media (max-width: 48em) {
+    width: 39.1px;
+    height: 39.1px;
+    background-size: 39.1px 39.1px;
+  }
+
+  /* Desktop Sizes */
+  @media (min-width: 48em) {
+    width: 47.5px;
+    height: 47.5px;
+    background-size: 47.5px 47.5px;
+  }
+}

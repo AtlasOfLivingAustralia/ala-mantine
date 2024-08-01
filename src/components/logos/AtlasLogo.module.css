@@ -1,0 +1,22 @@
+.image {
+  @mixin light {
+    background-image: url("../../static/ala-light.svg");
+  }
+  @mixin dark {
+    background-image: url("../../static/ala-dark.svg");
+  }
+
+  /* Mobile Sizes */
+  @media (max-width: 48em) {
+    width: 186px;
+    height: 27.014px;
+    background-size: 186px 27.014px;
+  }
+
+  /* Desktop Sizes */
+  @media (min-width: 48em) {
+    width: 324px;
+    height: 47.6px;
+    background-size: 324px 47.6px;
+  }
+}

@@ -78,6 +78,7 @@ const components = {
     classNames: classes.tabs,
     defaultProps: {
       variant: "ala",
+      unstyled: true,
     },
   }),
 };

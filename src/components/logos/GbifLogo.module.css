@@ -1,0 +1,22 @@
+.image {
+  @mixin light {
+    background-image: url("../../static/gbif-light.svg");
+  }
+  @mixin dark {
+    background-image: url("../../static/gbif-dark.svg");
+  }
+
+  /* Mobile Sizes */
+  @media (max-width: 48em) {
+    width: 56.8px;
+    height: 29.9px;
+    background-size: 56.8px 29.9px;
+  }
+
+  /* Desktop Sizes */
+  @media (min-width: 48em) {
+    width: 69.1px;
+    height: 36.4px;
+    background-size: 69.1px 36.4px;
+  }
+}

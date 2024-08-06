@@ -12,11 +12,11 @@ import {
 } from "@mantine/core";
 
 // Icons & Logos
-import { FacebookIcon, InstagramIcon, LinkedInIcon, XIcon } from "../icons";
-import { AtlasLogo, CsiroLogo, GbifLogo, NcrisLogo } from "../logos";
+import { FacebookIcon, InstagramIcon, LinkedInIcon, XIcon } from "./icons";
+import { AtlasLogo, CsiroLogo, GbifLogo, NcrisLogo } from "./logos";
 
 // Styles
-import classes from "./index.module.css";
+import classes from "./Footer.module.css";
 
 export function Footer(): React.ReactElement {
   return (

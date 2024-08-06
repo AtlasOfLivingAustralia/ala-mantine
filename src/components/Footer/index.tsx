@@ -32,11 +32,27 @@ export function Footer(): React.ReactElement {
                 }}
               />
               <Text size="sm" pr={4}>
-                The <Anchor size="sm">ALA</Anchor> is made possible by
-                contributions from its partners, is supported by{" "}
-                <Anchor size="sm">NCRIS</Anchor>, is hosted by{" "}
-                <Anchor size="sm">CSIRO</Anchor>, and is the Australian node of{" "}
-                <Anchor size="sm">GBIF</Anchor>.
+                The{" "}
+                <Anchor href="https://www.ala.org.au/about-ala/" size="sm">
+                  ALA
+                </Anchor>{" "}
+                is made possible by contributions from its partners, is
+                supported by{" "}
+                <Anchor
+                  href="https://www.education.gov.au/national-collaborative-research-infrastructure-strategy-ncris"
+                  size="sm"
+                >
+                  NCRIS
+                </Anchor>
+                , is hosted by{" "}
+                <Anchor href="https://csiro.au/" size="sm">
+                  CSIRO
+                </Anchor>
+                , and is the Australian node of{" "}
+                <Anchor href="https://www.gbif.org/en/" size="sm">
+                  GBIF
+                </Anchor>
+                .
               </Text>
               <Group gap={30}>
                 <NcrisLogo />
@@ -47,8 +63,12 @@ export function Footer(): React.ReactElement {
           </GridCol>
           <GridCol span={{ base: 12, xs: 12, sm: 4 }}>
             <Stack gap={15} h="100%">
-              <Anchor fw="bold">News & updates</Anchor>
-              <Anchor fw="bold">Help and resources</Anchor>
+              <Anchor href="https://www.ala.org.au/blog/" fw="bold">
+                News & updates
+              </Anchor>
+              <Anchor href="https://www.ala.org.au/blog/" fw="bold">
+                Help and resources
+              </Anchor>
               <Group gap={30}>
                 <UnstyledButton
                   component="a"
@@ -84,10 +104,16 @@ export function Footer(): React.ReactElement {
                 className={`${classes.links} ${classes.desktop}`}
                 gap="xs"
               >
-                <Anchor size="sm">Copyright</Anchor>
-                <Anchor size="sm">Terms of use</Anchor>
+                <Anchor href="https://www.ala.org.au/terms-of-use#cy" size="sm">
+                  Copyright
+                </Anchor>
+                <Anchor href="https://www.ala.org.au/terms-of-use" size="sm">
+                  Terms of use
+                </Anchor>
                 <Anchor size="sm">Accessibility</Anchor>
-                <Anchor size="sm">System status</Anchor>
+                <Anchor href="https://status.ala.org.au/" size="sm">
+                  System status
+                </Anchor>
               </Group>
             </Stack>
           </GridCol>
@@ -95,10 +121,12 @@ export function Footer(): React.ReactElement {
             <Stack gap={15}>
               <Text fw="bold">Contact us</Text>
               <Text>
-                <Anchor>support@ala.org.au</Anchor> for technical support and
-                general enquiries
+                <Anchor href="mailto:support@ala.org.au">
+                  support@ala.org.au
+                </Anchor>{" "}
+                for technical support and general enquiries
               </Text>
-              <Text>
+              <Text href="communications@ala.org.au">
                 <Anchor>communications@ala.org.au</Anchor> for media and
                 engagement enquiries
               </Text>
@@ -107,10 +135,16 @@ export function Footer(): React.ReactElement {
                 className={`${classes.links} ${classes.mobile}`}
                 gap="xs"
               >
-                <Anchor size="sm">Copyright</Anchor>
-                <Anchor size="sm">Terms of use</Anchor>
+                <Anchor href="https://www.ala.org.au/terms-of-use#cy" size="sm">
+                  Copyright
+                </Anchor>
+                <Anchor href="https://www.ala.org.au/terms-of-use" size="sm">
+                  Terms of use
+                </Anchor>
                 <Anchor size="sm">Accessibility</Anchor>
-                <Anchor size="sm">System status</Anchor>
+                <Anchor href="https://status.ala.org.au/" size="sm">
+                  System status
+                </Anchor>
               </Group>
             </Stack>
           </GridCol>

@@ -25,11 +25,13 @@ import headerData from "./header.json";
 interface HeaderProps {
   onAuthClick?: React.MouseEventHandler<HTMLButtonElement>;
   onSearchClick?: React.MouseEventHandler<HTMLButtonElement>;
+  isAuthenticated?: boolean;
 }
 
 export function Header({
   onAuthClick,
   onSearchClick,
+  isAuthenticated
 }: HeaderProps): React.ReactElement {
   const [activeTab, setActiveTab] = useState<string | null>(null);
 
@@ -53,8 +55,8 @@ export function Header({
             >
               <Text fw={500}>Contact Us</Text>
             </UnstyledButton>
-            <Button onClick={onAuthClick} size="md">
-              Sign in
+            <Button className={classes.auth} onClick={onAuthClick} size="md">
+              {isAuthenticated ? 'Sign out' : 'Sign in'}
             </Button>
           </Group>
         </Group>

@@ -2,7 +2,7 @@
   &[data-variant="ala"] {
     background-color: var(--mantine-color-honey-3);
     border-radius: 5px;
-    padding: 8px;
+    padding: 8px 8px 11px 8px;
 
     & .message {
       color: var(--mantine-color-charcoal-9);
@@ -17,6 +17,7 @@
 
     /* Mobile Font Sizes */
     @media (max-width: 48em) {
+      padding-bottom: 10px;
       & .message,
       & .message :global(.mantine-Anchor-root) {
         font-size: 0.75rem;
@@ -29,7 +30,7 @@
       & .message,
       & .message :global(.mantine-Anchor-root) {
         font-size: 0.875rem;
-        line-height: 1.125rem;
+        line-height: 1.25rem;
       }
     }
 

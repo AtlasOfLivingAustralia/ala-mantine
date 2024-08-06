@@ -1,9 +1,9 @@
 .image {
   @mixin light {
-    background-image: url("../../static/ncris-light.png");
+    background-image: url("../../static/ncris-light.svg");
   }
   @mixin dark {
-    background-image: url("../../static/ncris-dark.png");
+    background-image: url("../../static/ncris-dark.svg");
   }
 
   /* Mobile Sizes */

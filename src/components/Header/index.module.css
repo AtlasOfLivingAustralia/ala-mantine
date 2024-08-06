@@ -40,3 +40,7 @@
     background-color: black;
   }
 }
+
+.auth {
+  padding: 8px 15px 10px 15px !important;
+}

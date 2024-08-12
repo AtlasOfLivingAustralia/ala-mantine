@@ -32,6 +32,8 @@ This library requires the following peer dependencies:
 
 Once you've made changes to `ala-mantine`, run `yalc push` from the `ala-mantine` root folder to automatically push all changes to the dependent applications.
 
+Then, in your dependent applications, make sure to remove any cache (`.vite`, `.next` or equivalent) and re-run.
+
 ### yarn / npm
 
 This package can be installed with yarn / npm using the following command(s):

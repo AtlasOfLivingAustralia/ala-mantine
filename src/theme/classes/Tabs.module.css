@@ -4,10 +4,11 @@
     padding: 15px;
     border: none;
     border-bottom: 3px solid transparent;
+    line-height: 1.25rem;
 
     & .tabLabel {
       font-size: 0.875rem;
-      line-height: 1.125rem;
+      line-height: 1.25rem;
     }
 
     &:hover {

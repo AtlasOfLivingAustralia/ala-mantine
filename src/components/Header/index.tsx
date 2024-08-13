@@ -1,26 +1,32 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
+  Accordion,
   Box,
   Button,
   Center,
   Container,
+  Drawer,
   Group,
   Tabs,
   TabsList,
   TabsTab,
   Text,
   UnstyledButton,
-} from "@mantine/core";
-import { AtlasLogo, ChevronDownIcon, SearchIcon } from "ala-mantine";
-import { Panel } from "./Panel";
+} from '@mantine/core';
+import { useDisclosure } from '@mantine/hooks';
+import { AtlasLogo, ChevronDownIcon, MenuIcon, SearchIcon } from 'ala-mantine';
+import { Panel } from './Panel';
 
 // Styles
-import classes from "./index.module.css";
-import tabsClasses from "./classes/Tabs.module.css";
+import classes from './index.module.css';
+import tabsClasses from './classes/Tabs.module.css';
+import accordionClasses from './classes/Accordion.module.css';
+import drawerClasses from './classes/Drawer.module.css';
 
-import headerData from "./header.json";
+import headerData from './header.json';
+import { SidebarItem } from './SidebarItem';
 
 interface HeaderProps {
   onAuthClick?: React.MouseEventHandler<HTMLButtonElement>;
@@ -31,37 +37,38 @@ interface HeaderProps {
 export function Header({
   onAuthClick,
   onSearchClick,
-  isAuthenticated
+  isAuthenticated,
 }: HeaderProps): React.ReactElement {
   const [activeTab, setActiveTab] = useState<string | null>(null);
+  const [opened, { open, close }] = useDisclosure(false);
 
-  const onTabChange = (newTab: string | null) =>
-    setActiveTab(newTab !== activeTab ? newTab : null);
+  const onTabChange = (newTab: string | null) => setActiveTab(newTab !== activeTab ? newTab : null);
 
   return (
     <Box className={classes.header}>
-      <Container size="lg">
+      <Container px={15} size="lg">
         <Group justify="space-between" className={classes.group}>
           <AtlasLogo />
-          <Group gap={30}>
+          <Group className={classes.desktop} gap={30}>
             <UnstyledButton onClick={onSearchClick}>
               <Center>
                 <SearchIcon />
               </Center>
             </UnstyledButton>
-            <UnstyledButton
-              component="a"
-              href="https://www.ala.org.au/contact-us/"
-            >
+            <UnstyledButton component="a" href="https://www.ala.org.au/contact-us/">
               <Text fw={500}>Contact Us</Text>
             </UnstyledButton>
             <Button className={classes.auth} onClick={onAuthClick} size="md">
               {isAuthenticated ? 'Sign out' : 'Sign in'}
             </Button>
           </Group>
+          <UnstyledButton className={classes.mobile} onClick={open}>
+            <MenuIcon />
+          </UnstyledButton>
         </Group>
       </Container>
       <Tabs
+        className={classes.desktop}
         value={activeTab}
         onChange={onTabChange}
         unstyled
@@ -85,6 +92,22 @@ export function Header({
           </Container>
         </Box>
       </Tabs>
+      <Drawer
+        className={classes.mobile}
+        classNames={drawerClasses}
+        size={345}
+        position="right"
+        opened={opened}
+        onClose={close}
+        padding={0}
+        withCloseButton={false}
+      >
+        <Accordion variant="default" classNames={accordionClasses}>
+          {headerData.map((panel) => (
+            <SidebarItem key={panel.value} data={panel} />
+          ))}
+        </Accordion>
+      </Drawer>
     </Box>
   );
 }

@@ -1,0 +1,49 @@
+.root {
+  & .control {
+    height: 45px;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+
+    & .label {
+      font-weight: 500;
+    }
+
+    &[data-active='true'] {
+      @mixin dark {
+        color: var(--mantine-color-flamingo-4);
+      }
+
+      @mixin light {
+        color: var(--mantine-color-rust-6);
+      }
+    }
+  }
+
+  & .content {
+    padding: 0;
+  }
+
+  & .panel {
+    display: flex;
+    flex-direction: row;
+
+    & :global(.mantine-UnstyledButton-root) {
+      height: 47px;
+      border-top: 1px solid var(--mantine-color-default-border);
+      padding: 12px 15px 15px 30px;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+
+      &:hover {
+        @mixin dark {
+          color: var(--mantine-color-flamingo-4);
+        }
+
+        @mixin light {
+          color: var(--mantine-color-rust-6);
+        }
+        text-decoration: underline;
+      }
+    }
+  }
+}

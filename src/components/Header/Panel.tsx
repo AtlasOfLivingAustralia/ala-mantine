@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import React, { PropsWithChildren } from 'react';
 import {
   Divider,
   Grid,
@@ -9,10 +9,10 @@ import {
   Text,
   Title,
   UnstyledButton,
-} from "@mantine/core";
-import { ArrowRightIcon } from "ala-mantine";
+} from '@mantine/core';
+import { ArrowRightIcon } from 'ala-mantine';
 
-import classes from "./Panel.module.css";
+import classes from './Panel.module.css';
 
 interface PanelLinkData {
   href: string;
@@ -28,7 +28,7 @@ export interface PanelData {
   colTwoLinks?: PanelLinkData[];
 }
 
-interface HeaderTabProps extends PropsWithChildren {
+interface PanelProps extends PropsWithChildren {
   data: PanelData;
 }
 
@@ -45,7 +45,7 @@ function PanelLink({ link }: { link: PanelLinkData }) {
   );
 }
 
-export function Panel({ data }: HeaderTabProps): React.ReactElement {
+export function Panel({ data }: PanelProps): React.ReactElement {
   const { value, title, description, colOneLinks, colTwoLinks } = data;
 
   return (

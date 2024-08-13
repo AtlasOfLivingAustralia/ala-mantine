@@ -11,8 +11,8 @@
   /* Mobile Sizes */
   @media (max-width: 48em) {
     height: 52px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 12px;
+    padding-bottom: 13px;
     align-items: flex-end;
   }
 
@@ -43,4 +43,18 @@
 
 .auth {
   padding: 8px 15px 10px 15px !important;
+}
+
+.mobile {
+  /* Desktop Sizes */
+  @media (min-width: 48em) {
+    display: none !important;
+  }
+}
+
+.desktop {
+  /* Mobile Sizes */
+  @media (max-width: 48em) {
+    display: none !important;
+  }
 }

@@ -3,7 +3,7 @@
 }
 
 .tr[data-striped="odd"] {
-  &:nth-child(odd) {
+  &:nth-child(odd):not(:hover) {
     @mixin light {
       background-color: var(--mantine-color-concrete-0);
     }
@@ -13,7 +13,7 @@
   }
 }
 
-.tr[data-striped="even"] {
+.tr[data-striped="even"]:not(:hover) {
   &:nth-child(even) {
     @mixin light {
       background-color: var(--mantine-color-concrete-0);

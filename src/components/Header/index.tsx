@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Accordion,
   Box,
@@ -14,35 +14,44 @@ import {
   TabsTab,
   Text,
   UnstyledButton,
-} from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import { AtlasLogo, ChevronDownIcon, MenuIcon, SearchIcon } from 'ala-mantine';
-import { Panel } from './Panel';
+} from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
+import {
+  AtlasLogo,
+  ChevronDownIcon,
+  MenuIcon,
+  SearchIcon,
+  ThemeIcon,
+} from "ala-mantine";
+import { Panel } from "./Panel";
 
 // Styles
-import classes from './index.module.css';
-import tabsClasses from './classes/Tabs.module.css';
-import accordionClasses from './classes/Accordion.module.css';
-import drawerClasses from './classes/Drawer.module.css';
+import classes from "./index.module.css";
+import tabsClasses from "./classes/Tabs.module.css";
+import accordionClasses from "./classes/Accordion.module.css";
+import drawerClasses from "./classes/Drawer.module.css";
 
-import headerData from './header.json';
-import { SidebarItem } from './SidebarItem';
+import headerData from "./header.json";
+import { SidebarItem } from "./SidebarItem";
 
 interface HeaderProps {
   onAuthClick?: React.MouseEventHandler<HTMLButtonElement>;
   onSearchClick?: React.MouseEventHandler<HTMLButtonElement>;
+  onThemeToggleClick?: React.MouseEventHandler<HTMLButtonElement>;
   isAuthenticated?: boolean;
 }
 
 export function Header({
   onAuthClick,
   onSearchClick,
+  onThemeToggleClick,
   isAuthenticated,
 }: HeaderProps): React.ReactElement {
   const [activeTab, setActiveTab] = useState<string | null>(null);
   const [opened, { open, close }] = useDisclosure(false);
 
-  const onTabChange = (newTab: string | null) => setActiveTab(newTab !== activeTab ? newTab : null);
+  const onTabChange = (newTab: string | null) =>
+    setActiveTab(newTab !== activeTab ? newTab : null);
 
   return (
     <Box className={classes.header}>
@@ -50,16 +59,24 @@ export function Header({
         <Group justify="space-between" className={classes.group}>
           <AtlasLogo />
           <Group className={classes.desktop} gap={30}>
+            <UnstyledButton onClick={onThemeToggleClick}>
+              <Center>
+                <ThemeIcon />
+              </Center>
+            </UnstyledButton>
             <UnstyledButton onClick={onSearchClick}>
               <Center>
                 <SearchIcon />
               </Center>
             </UnstyledButton>
-            <UnstyledButton component="a" href="https://www.ala.org.au/contact-us/">
+            <UnstyledButton
+              component="a"
+              href="https://www.ala.org.au/contact-us/"
+            >
               <Text fw={500}>Contact Us</Text>
             </UnstyledButton>
             <Button className={classes.auth} onClick={onAuthClick} size="md">
-              {isAuthenticated ? 'Sign out' : 'Sign in'}
+              {isAuthenticated ? "Sign out" : "Sign in"}
             </Button>
           </Group>
           <UnstyledButton className={classes.mobile} onClick={open}>

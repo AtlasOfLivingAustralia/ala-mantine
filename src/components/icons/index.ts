@@ -27,6 +27,7 @@ export { SortIcon } from "./SortIcon.tsx";
 export { SoundwaveIcon } from "./SoundwaveIcon.tsx";
 export { TickIcon } from "./TickIcon.tsx";
 export { TilesIcon } from "./TilesIcon.tsx";
+export { ThemeIcon } from "./ThemeIcon.tsx";
 export { CautionIcon } from "./alerts/CautionIcon.tsx";
 export { FlagIcon } from "./alerts/FlagIcon.tsx";
 export { InfoIcon } from "./alerts/InfoIcon.tsx";

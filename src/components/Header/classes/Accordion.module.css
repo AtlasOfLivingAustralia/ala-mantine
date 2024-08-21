@@ -3,9 +3,17 @@
     height: 45px;
     font-size: 0.875rem;
     line-height: 1.125rem;
+    justify-content: flex-end;
 
     & .label {
       font-weight: 500;
+      flex: unset;
+    }
+
+    & .chevron {
+      width: 16px;
+      height: 16px;
+      margin-left: 5px;
     }
 
     &[data-active='true'] {

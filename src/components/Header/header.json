@@ -19,7 +19,7 @@
     ],
     "colTwoLinks": [
       {
-        "href": "_1",
+        "href": "__1",
         "text": "Search collections"
       },
       {
@@ -176,7 +176,7 @@
         "text": "News and events"
       },
       {
-        "href": "https://www.ala.org.au/blog/",
+        "href": "https://www.ala.org.au/blog/#",
         "text": "News archive",
         "nested": true
       },

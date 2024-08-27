@@ -14,6 +14,7 @@ import {
   TabsTab,
   Text,
   UnstyledButton,
+  useMantineColorScheme,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import {
@@ -37,18 +38,17 @@ import { SidebarItem } from "./SidebarItem";
 interface HeaderProps {
   onAuthClick?: React.MouseEventHandler<HTMLButtonElement>;
   onSearchClick?: React.MouseEventHandler<HTMLButtonElement>;
-  onThemeToggleClick?: React.MouseEventHandler<HTMLButtonElement>;
   isAuthenticated?: boolean;
 }
 
 export function Header({
   onAuthClick,
   onSearchClick,
-  onThemeToggleClick,
   isAuthenticated,
 }: HeaderProps): React.ReactElement {
   const [activeTab, setActiveTab] = useState<string | null>(null);
   const [opened, { open, close }] = useDisclosure(false);
+  const { toggleColorScheme } = useMantineColorScheme();
 
   const onTabChange = (newTab: string | null) =>
     setActiveTab(newTab !== activeTab ? newTab : null);
@@ -59,7 +59,7 @@ export function Header({
         <Group justify="space-between" className={classes.group}>
           <AtlasLogo />
           <Group className={classes.desktop} gap={30}>
-            <UnstyledButton onClick={onThemeToggleClick}>
+            <UnstyledButton onClick={toggleColorScheme}>
               <Center>
                 <ThemeIcon />
               </Center>

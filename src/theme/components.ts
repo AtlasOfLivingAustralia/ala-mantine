@@ -7,11 +7,15 @@ import {
   Checkbox,
   Divider,
   Image,
+  MultiSelect,
   Radio,
   Text,
+  Textarea,
+  TextInput,
   Table,
   Tabs,
   Title,
+  Select,
 } from "@mantine/core";
 
 import classes from "./classes";
@@ -55,6 +59,11 @@ const components = {
       radius: 10,
     },
   }),
+  MultiSelect: MultiSelect.extend({
+    defaultProps: {
+      radius: 10,
+    },
+  }),
   Radio: Radio.extend({
     classNames: classes.radio,
     defaultProps: {
@@ -66,6 +75,16 @@ const components = {
   }),
   Text: Text.extend({
     classNames: classes.text,
+  }),
+  Textarea: Textarea.extend({
+    defaultProps: {
+      radius: "md",
+    },
+  }),
+  TextInput: TextInput.extend({
+    defaultProps: {
+      radius: "md",
+    },
   }),
   Table: Table.extend({
     classNames: classes.table,
@@ -79,6 +98,11 @@ const components = {
     defaultProps: {
       variant: "ala",
       unstyled: true,
+    },
+  }),
+  Select: Select.extend({
+    defaultProps: {
+      radius: "md",
     },
   }),
 };

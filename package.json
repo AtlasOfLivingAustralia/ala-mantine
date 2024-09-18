@@ -1,6 +1,6 @@
 {
   "name": "@atlasoflivingaustralia/ala-mantine",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "src/index.ts",
   "peerDependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",

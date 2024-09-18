@@ -17,13 +17,8 @@ import {
   useMantineColorScheme,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import {
-  AtlasLogo,
-  ChevronDownIcon,
-  MenuIcon,
-  SearchIcon,
-  ThemeIcon,
-} from "ala-mantine";
+import { AtlasLogo } from "../logos";
+import { ChevronDownIcon, MenuIcon, SearchIcon, ThemeIcon } from "../icons";
 import { Panel } from "./Panel";
 
 // Styles

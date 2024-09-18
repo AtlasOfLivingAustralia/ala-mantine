@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from 'react';
+import React, { PropsWithChildren } from "react";
 import {
   Divider,
   Grid,
@@ -9,10 +9,10 @@ import {
   Text,
   Title,
   UnstyledButton,
-} from '@mantine/core';
-import { ArrowRightIcon } from 'ala-mantine';
+} from "@mantine/core";
+import { ArrowRightIcon } from "../icons";
 
-import classes from './Panel.module.css';
+import classes from "./Panel.module.css";
 
 interface PanelLinkData {
   href: string;

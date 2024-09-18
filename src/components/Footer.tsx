@@ -74,6 +74,7 @@ export function Footer(): React.ReactElement {
                   component="a"
                   href="https://facebook.com/atlasoflivingaustralia/"
                   target="_blank"
+                  aria-label="Facebook"
                 >
                   <FacebookIcon />
                 </UnstyledButton>
@@ -81,6 +82,7 @@ export function Footer(): React.ReactElement {
                   component="a"
                   href="https://x.com/atlaslivingaust"
                   target="_blank"
+                  aria-label="Twitter"
                 >
                   <XIcon />
                 </UnstyledButton>
@@ -88,6 +90,7 @@ export function Footer(): React.ReactElement {
                   component="a"
                   href="https://au.linkedin.com/company/atlas-of-living-australia"
                   target="_blank"
+                  aria-label="Linkedin"
                 >
                   <LinkedInIcon />
                 </UnstyledButton>
@@ -95,6 +98,7 @@ export function Footer(): React.ReactElement {
                   component="a"
                   href="https://www.instagram.com/atlasoflivingaustralia/"
                   target="_blank"
+                  aria-label="Instagram"
                 >
                   <InstagramIcon />
                 </UnstyledButton>

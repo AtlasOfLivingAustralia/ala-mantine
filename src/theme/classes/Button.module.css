@@ -6,7 +6,7 @@
     background-color: transparent;
     border: 1px solid var(--mantine-color-rust-6);
 
-    padding: 10px 14px 13px 14px;
+    padding: 10px 14px 10px 14px;
     text-align: left;
 
     @mixin light {

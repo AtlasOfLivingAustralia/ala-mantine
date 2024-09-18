@@ -59,12 +59,18 @@ export function Header({
         <Group justify="space-between" className={classes.group}>
           <AtlasLogo />
           <Group className={classes.desktop} gap={30}>
-            <UnstyledButton onClick={toggleColorScheme}>
+            <UnstyledButton
+              onClick={toggleColorScheme}
+              aria-label="Toggle colour scheme"
+            >
               <Center>
                 <ThemeIcon />
               </Center>
             </UnstyledButton>
-            <UnstyledButton onClick={onSearchClick}>
+            <UnstyledButton
+              onClick={onSearchClick}
+              aria-label="Search the Atlas of Living Australia"
+            >
               <Center>
                 <SearchIcon />
               </Center>
@@ -72,6 +78,7 @@ export function Header({
             <UnstyledButton
               component="a"
               href="https://www.ala.org.au/contact-us/"
+              aria-label="Contact us"
             >
               <Text fw={500}>Contact Us</Text>
             </UnstyledButton>
@@ -79,7 +86,11 @@ export function Header({
               {isAuthenticated ? "Sign out" : "Sign in"}
             </Button>
           </Group>
-          <UnstyledButton className={classes.mobile} onClick={open}>
+          <UnstyledButton
+            className={classes.mobile}
+            onClick={open}
+            aria-label="Open menu"
+          >
             <MenuIcon />
           </UnstyledButton>
         </Group>

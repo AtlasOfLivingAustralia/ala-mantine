@@ -16,7 +16,7 @@
 This library requires the following peer dependencies in your dependant project:
 
 - React `18.2.0` or newer
-- Mantine `7.2.0` or newer
+- Mantine `7.12.0` or newer
 
 ## Installation
 

@@ -3,12 +3,16 @@
   "version": "0.1.0",
   "main": "src/index.ts",
   "peerDependencies": {
-    "@mantine/core": "^7.12.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-regular-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
-    "@fortawesome/react-fontawesome": "^0.2.2"
-  }
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@mantine/core": "^7.12.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "description": "Shared ALA theming & components using the Mantine component library",
+  "repository": "https://github.com/AtlasOfLivingAustralia/ala-mantine.git",
+  "author": "Atlas of Living Australia <support@ala.org.au>",
+  "license": "MPL-2.0"
 }

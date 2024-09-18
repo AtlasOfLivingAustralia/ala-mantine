@@ -1,5 +1,5 @@
 {
-  "name": "ala-mantine",
+  "name": "@atlasoflivingaustralia/ala-mantine",
   "version": "0.1.0",
   "main": "src/index.ts",
   "peerDependencies": {

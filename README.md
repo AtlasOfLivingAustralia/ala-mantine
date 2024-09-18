@@ -1,5 +1,7 @@
 # ALA Mantine Library
 
+**This library is currently in a pre-release state (`v0.1.x`), and is subject to change.**
+
 > Shared ALA theming & components using the Mantine component library
 
 - [ALA Mantine Library](#ala-mantine-library)
@@ -32,7 +34,11 @@ Once this is done, you're ready to install `ala-mantine`!
 
 This package can be installed with yarn / npm using the following command(s):
 
-`yarn add ala-mantine` or `npm i ala-mantine`
+`yarn add @atlasoflivingaustralia/ala-mantine`
+
+or
+
+`npm i @atlasoflivingaustralia/ala-mantine`
 
 ### Local
 
@@ -60,7 +66,7 @@ import "@mantine/core/styles.css";
 
 // Mantine provider & theme
 import { MantineProvider } from "@mantine/core";
-import { theme } from "ala-mantine";
+import { theme } from "@atlasoflivingaustralia/ala-mantine";
 
 function App() {
   return (
@@ -79,18 +85,13 @@ Don't forget to add the `@mantine/core/styles.css` import at the root of your ap
 
 This project additionaly provides several high-level components that are leveraged across multiple ALA applications, and can be utilised in your own project.
 
-For example, the <Component> component can be implemented like so:
+For example, the <ConservationStatus /> component can be implemented like so:
 
 ```tsx
-import { MantineProvider } from "@mantine/core";
-import { CoolComponent } from "ala-mantine";
+import { ConservationStatus } from "@atlasoflivingaustralia/ala-mantine";
 
 function App() {
-  return (
-    <div>
-      <CoolComponent isCool={true} />
-    </div>
-  );
+  return <ConservationStatus key="EN" withLabel />;
 }
 
 export default App;

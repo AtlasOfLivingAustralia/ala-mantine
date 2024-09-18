@@ -1,6 +1,6 @@
 {
   "name": "@atlasoflivingaustralia/ala-mantine",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "src/index.ts",
   "peerDependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
@@ -14,5 +14,6 @@
   "description": "Shared ALA theming & components using the Mantine component library",
   "repository": "https://github.com/AtlasOfLivingAustralia/ala-mantine.git",
   "author": "Atlas of Living Australia <support@ala.org.au>",
-  "license": "MPL-2.0"
+  "license": "MPL-2.0",
+  "private": false
 }

@@ -130,9 +130,11 @@ export function Footer(): React.ReactElement {
                 </Anchor>{" "}
                 for technical support and general enquiries
               </Text>
-              <Text href="communications@ala.org.au">
-                <Anchor>communications@ala.org.au</Anchor> for media and
-                engagement enquiries
+              <Text>
+                <Anchor href="communications@ala.org.au">
+                  communications@ala.org.au
+                </Anchor>{" "}
+                for media and engagement enquiries
               </Text>
               <Group
                 style={{ marginTop: "auto" }}

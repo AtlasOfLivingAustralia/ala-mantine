@@ -1,5 +1,7 @@
 # ALA Mantine Library
 
+![NPM Version](https://img.shields.io/npm/v/%40atlasoflivingaustralia%2Fala-mantine)
+
 **This library is currently in a pre-release state (`v0.1.x`), and is subject to change.**
 
 > Shared ALA theming & components using the Mantine component library

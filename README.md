@@ -54,6 +54,10 @@ Once you've made changes to `ala-mantine`, run `yalc push` from the `ala-mantine
 
 Then, in your dependent applications, make sure to remove any cache (`.vite`, `.next` or equivalent) and re-run.
 
+To publish changes to NPM, you need to have a login for https://www.npmjs.com and be added to the ALA group (Ask Matt). Ensure that a new version number is set in package.json and create a new GH release for it, documenting the changes.
+
+Run the command `npm publish` and follow the prompts to login, etc. 
+
 ## Usage
 
 > See the [ALA Mantine Demo](https://github.com/AtlasOfLivingAustralia/ala-mantine-demo) application for specific implementation examples

@@ -13,8 +13,10 @@
 
   /* Mobile Font Sizes */
   @media (max-width: 48em) {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
+    &[data-size="base"] {
+      font-size: 0.875rem;
+      line-height: 1.125rem;
+    }
 
     &[data-size="xl"] {
       font-size: 1.25rem;
@@ -40,8 +42,10 @@
 
   /* Desktop Font Sizes */
   @media (min-width: 48em) {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    &[data-size="base"] {
+      font-size: 1rem;
+      line-height: 1.25rem;
+    }
 
     &[data-size="xl"] {
       font-size: 1.375rem;

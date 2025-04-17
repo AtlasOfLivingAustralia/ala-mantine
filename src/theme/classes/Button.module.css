@@ -55,8 +55,10 @@
 
     /* Desktop Font Sizes */
     @media (min-width: 48em) {
-      font-size: 1rem;
-      line-height: 1.375rem;
+      &[data-size="base"] {
+        font-size: 1rem;
+        line-height: 1.375rem;
+      }
     }
   }
 
@@ -101,8 +103,10 @@
     /* Mobile Font Sizes */
     @media (max-width: 48em) {
       & .label {
-        font-size: 0.875rem;
-        line-height: 1.125rem;
+        &[data-size="base"] {
+          font-size: 0.875rem;
+          line-height: 1.125rem;
+        }
       }
     }
 
@@ -111,8 +115,10 @@
       padding-bottom: 8px;
 
       & .label {
-        font-size: 1rem;
-        line-height: 1.375rem;
+        &[data-size="base"] {
+          font-size: 1rem;
+          line-height: 1.375rem;
+        }
       }
     }
 
@@ -148,14 +154,18 @@
 
       /* Mobile Font Sizes */
       @media (max-width: 48em) {
-        font-size: 0.75rem;
-        line-height: 1rem;
+        &[data-size="base"] {
+          font-size: 0.75rem;
+          line-height: 1rem;
+        }
       }
 
       /* Desktop Font Sizes */
       @media (min-width: 48em) {
-        font-size: 1rem;
-        line-height: 1.5rem;
+        &[data-size="base"] {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
       }
     }
 

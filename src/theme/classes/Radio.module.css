@@ -27,8 +27,10 @@
     }
 
     & .label {
-      font-size: 1rem;
-      line-height: 1.375rem;
+      &[data-size="base"] {
+        font-size: 1rem;
+        line-height: 1.375rem;
+      }
 
       @mixin light {
         color: var(--mantine-color-charcoal-9);
@@ -39,8 +41,10 @@
     }
 
     & .description {
-      font-size: 0.875rem;
-      line-height: 1.125;
+      &[data-size="base"] {
+        font-size: 0.875rem;
+        line-height: 1.125;
+      }
 
       @mixin light {
         color: var(--mantine-color-charcoal-9);

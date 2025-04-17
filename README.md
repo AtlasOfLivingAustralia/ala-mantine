@@ -47,12 +47,16 @@ or
 [Yalc](https://github.com/wclr/yalc) is needed to use `ala-mantine` locally. See [here](https://github.com/wclr/yalc?tab=readme-ov-file#installation) for Yalc installation documentation.
 
 1. Once installed, in the `ala-mantine` root folder, run `yalc publish`.
-2. In your dependant application, run `yalc add ala-mantine`, followed by `yarn` to install it as a dependency.
+2. In your dependant application, run `yalc add @atlasoflivingaustralia/ala-mantine`, followed by `yarn` to install it as a dependency.
 3. PostCSS is also required in your dependant application for the component library. Please see the installation intructions [here](https://mantine.dev/getting-started/#:~:text=Install%20PostCSS%20plugins%20and%20postcss%2Dpreset%2Dmantine%3A).
 
 Once you've made changes to `ala-mantine`, run `yalc push` from the `ala-mantine` root folder to automatically push all changes to the dependent applications.
 
 Then, in your dependent applications, make sure to remove any cache (`.vite`, `.next` or equivalent) and re-run.
+
+To publish changes to NPM, you need to have a login for https://www.npmjs.com and be added to the ALA group (Ask Matt). Ensure that a new version number is set in package.json and create a new GH release for it, documenting the changes.
+
+Run the command `npm publish` and follow the prompts to login, etc. 
 
 ## Usage
 

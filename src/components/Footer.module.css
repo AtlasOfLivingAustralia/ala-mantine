@@ -19,6 +19,11 @@
   }
 }
 
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .logo {
   /* Mobile Sizes */
   @media (max-width: 48em) {

@@ -34,12 +34,14 @@ interface HeaderProps {
   onAuthClick?: React.MouseEventHandler<HTMLButtonElement>;
   onSearchClick?: React.MouseEventHandler<HTMLButtonElement>;
   isAuthenticated?: boolean;
+  fullWidth?: boolean;
 }
 
 export function Header({
   onAuthClick,
   onSearchClick,
   isAuthenticated,
+  fullWidth = false,
 }: HeaderProps): React.ReactElement {
   const [activeTab, setActiveTab] = useState<string | null>(null);
   const [opened, { open, close }] = useDisclosure(false);
@@ -48,9 +50,11 @@ export function Header({
   const onTabChange = (newTab: string | null) =>
     setActiveTab(newTab !== activeTab ? newTab : null);
 
+  const containerProps = fullWidth ? { fluid: true } : { size: 'lg' };
+
   return (
     <Box className={classes.header}>
-      <Container px={15} size="lg">
+      <Container {...containerProps} className={classes.container}>
         <Group justify="space-between" className={classes.group}>
           <AtlasLogo />
           <Group className={classes.desktop} gap={30}>
@@ -98,7 +102,7 @@ export function Header({
         variant="default"
         classNames={tabsClasses}
       >
-        <Container size="lg">
+        <Container {...containerProps} className={classes.container}>
           <TabsList defaultValue="speciesrecords">
             {headerData.map((panel) => (
               <TabsTab key={panel.value} value={panel.value}>
@@ -108,7 +112,7 @@ export function Header({
           </TabsList>
         </Container>
         <Box className={classes.tab}>
-          <Container size="lg">
+          <Container {...containerProps}>
             {headerData.map((panel) => (
               <Panel key={panel.value} data={panel} />
             ))}

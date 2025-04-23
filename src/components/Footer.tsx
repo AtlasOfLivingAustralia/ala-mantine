@@ -18,10 +18,12 @@ import { AtlasLogo, CsiroLogo, GbifLogo, NcrisLogo } from "./logos";
 // Styles
 import classes from "./Footer.module.css";
 
-export function Footer(): React.ReactElement {
+export function Footer({fullWidth = false}: {fullWidth?: boolean}): React.ReactElement {
+  const containerProps = fullWidth ? { fluid: true } : { size: 'lg' };
+
   return (
     <Box className={classes.footer}>
-      <Container size="lg">
+      <Container {...containerProps} className={classes.container}>
         <Grid gutter={28}>
           <GridCol span={{ base: 12, xs: 12, sm: 4 }}>
             <Stack gap={20}>

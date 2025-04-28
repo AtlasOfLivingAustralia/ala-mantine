@@ -34,7 +34,8 @@ interface HeaderProps {
   onAuthClick?: React.MouseEventHandler<HTMLButtonElement>;
   onSearchClick?: React.MouseEventHandler<HTMLButtonElement>;
   isAuthenticated?: boolean;
-  fullWidth?: boolean;
+  fullWidth?: boolean; // Header should take full width of the screen (default: false)
+  compact?: boolean; // Header should use less vertical space (default: false)
 }
 
 export function Header({
@@ -42,6 +43,7 @@ export function Header({
   onSearchClick,
   isAuthenticated,
   fullWidth = false,
+  compact = false,
 }: HeaderProps): React.ReactElement {
   const [activeTab, setActiveTab] = useState<string | null>(null);
   const [opened, { open, close }] = useDisclosure(false);
@@ -51,11 +53,13 @@ export function Header({
     setActiveTab(newTab !== activeTab ? newTab : null);
 
   const containerProps = fullWidth ? { fluid: true } : { size: 'lg' };
+  const groupClass = compact ? classes.groupCompact : classes.group;
+  const tabClass = compact ? classes.tabCompact : undefined;
 
   return (
     <Box className={classes.header}>
       <Container {...containerProps} className={classes.container}>
-        <Group justify="space-between" className={classes.group}>
+        <Group justify="space-between" className={groupClass}>
           <AtlasLogo />
           <Group className={classes.desktop} gap={30}>
             <UnstyledButton
@@ -105,7 +109,7 @@ export function Header({
         <Container {...containerProps} className={classes.container}>
           <TabsList defaultValue="speciesrecords">
             {headerData.map((panel) => (
-              <TabsTab key={panel.value} value={panel.value}>
+              <TabsTab key={panel.value} value={panel.value} className={tabClass}>
                 {panel.title} <ChevronDownIcon />
               </TabsTab>
             ))}

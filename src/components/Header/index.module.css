@@ -7,8 +7,17 @@
   }
 }
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
+  /* Mobile Sizes */
+  @media (max-width: 48em) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Desktop Sizes */
+  @media (min-width: 48em) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .group {
@@ -26,6 +35,25 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+}
+
+.groupCompact {
+  /* Mobile Sizes */
+  @media (max-width: 48em) {
+    padding-top: 12px;
+    padding-bottom: 13px;
+    align-items: flex-end;
+  }
+
+  /* Desktop Sizes */
+  @media (min-width: 48em) {
+    padding-top: 15px;
+    padding-bottom: 0px;
+  }
+}
+
+.tabCompact {
+  padding: 10px 0px !important;
 }
 
 .tab {

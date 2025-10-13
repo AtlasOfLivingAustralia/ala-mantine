@@ -19,4 +19,10 @@
     height: 47.6px;
     background-size: 324px 47.6px;
   }
+
+  .logoLink {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }

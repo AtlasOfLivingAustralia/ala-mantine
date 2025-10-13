@@ -1,6 +1,6 @@
 {
   "name": "@atlasoflivingaustralia/ala-mantine",
-  "version": "0.1.9",
+  "version": "0.1.11",
   "main": "src/index.ts",
   "peerDependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
@@ -10,6 +10,10 @@
     "@mantine/core": "^7.12.0",
     "react": "^18.x || ^19.x",
     "react-dom": "^18.x || ^19.x"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "react": "^18.0.0"
   },
   "description": "Shared ALA theming & components using the Mantine component library",
   "repository": "https://github.com/AtlasOfLivingAustralia/ala-mantine.git",

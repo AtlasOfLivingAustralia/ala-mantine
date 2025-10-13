@@ -36,12 +36,14 @@ interface HeaderProps {
   isAuthenticated?: boolean;
   fullWidth?: boolean; // Header should take full width of the screen (default: false)
   compact?: boolean; // Header should use less vertical space (default: false)
+  homeUrl?: string; // URL to navigate to when the logo is clicked (default: undefined)
 }
 
 export function Header({
   onAuthClick,
   onSearchClick,
   isAuthenticated,
+  homeUrl,
   fullWidth = false,
   compact = false,
 }: HeaderProps): React.ReactElement {
@@ -60,7 +62,7 @@ export function Header({
     <Box className={classes.header}>
       <Container {...containerProps} className={classes.container}>
         <Group justify="space-between" className={groupClass}>
-          <AtlasLogo />
+          <AtlasLogo homeUrl={homeUrl} />
           <Group className={classes.desktop} gap={30}>
             <UnstyledButton
               onClick={toggleColorScheme}

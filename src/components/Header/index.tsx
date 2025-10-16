@@ -36,14 +36,16 @@ interface HeaderProps {
   isAuthenticated?: boolean;
   fullWidth?: boolean; // Header should take full width of the screen (default: false)
   compact?: boolean; // Header should use less vertical space (default: false)
-  homeUrl?: string; // URL to navigate to when the logo is clicked (default: undefined)
+  homeUrl?: string; // URL to navigate to when the logo is clicked (default: ALA home page)
+  myProfileUrl?: string; // URL to navigate to when "My Profile" is clicked (default: ALA My Profile page)
 }
 
 export function Header({
   onAuthClick,
   onSearchClick,
   isAuthenticated,
-  homeUrl,
+  homeUrl = "https://www.ala.org.au/",
+  myProfileUrl = "https://auth.ala.org.au/userdetails/myprofile",
   fullWidth = false,
   compact = false,
 }: HeaderProps): React.ReactElement {
@@ -87,6 +89,14 @@ export function Header({
             >
               <Text fw={500}>Contact Us</Text>
             </UnstyledButton>
+            {isAuthenticated ? (
+              <UnstyledButton className={classes.auth} component="a"
+                href={myProfileUrl}
+                aria-label="My profile"
+              >
+                <Text fw={500}>My Profile</Text>
+              </UnstyledButton>
+            ) : null}
             <Button className={classes.auth} onClick={onAuthClick} size="md">
               {isAuthenticated ? "Sign out" : "Sign in"}
             </Button>

@@ -5,7 +5,7 @@
     "description": "Learn about species, their characteristics, where they have been found, and more. Search, view and download species occurrence records or datasets.",
     "colOneLinks": [
       {
-        "href": "_1",
+        "href": "https://bie.ala.org.au/",
         "text": "Search species"
       },
       {
@@ -19,7 +19,7 @@
     ],
     "colTwoLinks": [
       {
-        "href": "__1",
+        "href": "https://profiles.ala.org.au/opus/foa",
         "text": "Search collections"
       },
       {
@@ -33,7 +33,7 @@
         "nested": true
       },
       {
-        "href": "_1_3",
+        "href": "https://avh.ala.org.au/#tab_simpleSearch",
         "text": "Specialised collections",
         "nested": true
       },
@@ -142,7 +142,7 @@
         "text": "Contact us"
       },
       {
-        "href": "_3",
+        "href": "https://www.ala.org.au/careers/",
         "text": "Work with us"
       },
       {
@@ -156,7 +156,7 @@
         "nested": true
       },
       {
-        "href": "_4",
+        "href": "https://www.ala.org.au/abdmp/",
         "text": "Grants and opportunities"
       },
       {
@@ -181,7 +181,7 @@
         "nested": true
       },
       {
-        "href": "_2",
+        "href": "https://www.ala.org.au/governance/",
         "text": "Governance and publications"
       },
       {
@@ -190,7 +190,7 @@
         "nested": true
       },
       {
-        "href": "_2_2",
+        "href": "https://www.ala.org.au/governance/",
         "text": "Strategy and reports",
         "nested": true
       },
@@ -246,7 +246,7 @@
     ],
     "colTwoLinks": [
       {
-        "href": "_1",
+        "href": "https://www.ala.org.au/education-resources/",
         "text": "Training resources Hub"
       },
       {

@@ -44,7 +44,29 @@ or
 
 ### Local
 
-[Yalc](https://github.com/wclr/yalc) is needed to use `ala-mantine` locally. See [here](https://github.com/wclr/yalc?tab=readme-ov-file#installation) for Yalc installation documentation.
+To enable live updating of ala-mantine changes in a client application, run the following commands.
+
+
+In the `ala-mantine` root directory, run:
+```sh
+yarn link
+yarn dev 
+```
+
+In your client app, run:
+```sh
+yarn link @atlasoflivingaustralia/ala-mantine
+```
+
+When you're done developing and want to go back to the published version, you just run:
+```
+yarn unlink @atlasoflivingaustralia/ala-mantine
+yarn install --force
+```
+
+This will restore the normal npm registry version.
+
+<!-- [Yalc](https://github.com/wclr/yalc) is needed to use `ala-mantine` locally. See [here](https://github.com/wclr/yalc?tab=readme-ov-file#installation) for Yalc installation documentation.
 
 1. Once installed, in the `ala-mantine` root folder, run `yalc publish`.
 2. In your dependant application, run `yalc add @atlasoflivingaustralia/ala-mantine`, followed by `yarn` to install it as a dependency.
@@ -56,7 +78,7 @@ Then, in your dependent applications, make sure to remove any cache (`.vite`, `.
 
 To publish changes to NPM, you need to have a login for https://www.npmjs.com and be added to the ALA group (Ask Matt). Ensure that a new version number is set in package.json and create a new GH release for it, documenting the changes.
 
-Run the command `npm publish` and follow the prompts to login, etc. 
+Run the command `npm publish` and follow the prompts to login, etc.  -->
 
 ## Usage
 

@@ -1,19 +1,48 @@
 {
   "name": "@atlasoflivingaustralia/ala-mantine",
-  "version": "0.1.13",
-  "main": "src/index.ts",
+  "version": "1.0.0",
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.mts"
+    },
+    "./dist/index.css": "./dist/index.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch"
+  },
   "peerDependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-regular-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
-    "@mantine/core": "^7.12.0",
+    "@mantine/core": "^7.17.8",
+    "@mantine/hooks": "^7.17.8",
     "react": "^18.x || ^19.x",
     "react-dom": "^18.x || ^19.x"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.1.0",
+    "@fortawesome/free-regular-svg-icons": "^7.1.0",
+    "@fortawesome/free-solid-svg-icons": "^7.1.0",
+    "@fortawesome/react-fontawesome": "^3.1.1",
+    "@mantine/core": "^8.3.10",
+    "@mantine/hooks": "^8.3.10",
+    "@types/node": "^25.0.3",
     "@types/react": "^18.0.0",
-    "react": "^18.0.0"
+    "@vitejs/plugin-react": "^5.1.2",
+    "react": "^18.0.0",
+    "react-dom": "^19.2.3",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.0",
+    "vite-plugin-dts": "^4.5.4"
   },
   "description": "Shared ALA theming & components using the Mantine component library",
   "repository": "https://github.com/AtlasOfLivingAustralia/ala-mantine.git",

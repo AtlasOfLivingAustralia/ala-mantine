@@ -13,3 +13,4 @@ package-lock.json
 #!.yarn/cache
 .pnp.*
 .DS_Store
+dist

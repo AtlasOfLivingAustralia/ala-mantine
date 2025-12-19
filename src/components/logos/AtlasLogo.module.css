@@ -18,11 +18,22 @@
     width: 324px;
     height: 47.6px;
     background-size: 324px 47.6px;
+    /* border: 1px solid red */
   }
 
   .logoLink {
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
+  }
+}
+
+.image.logoLegacy {
+  background-image: url("../../static/ala-dark.svg");
+  /* legacy */
+  @media (min-width: 48em) {
+    width: 335px;
+    height: 48px;
+    background-size: 335px 48px;
   }
 }

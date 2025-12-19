@@ -6,6 +6,35 @@
     background-color: black;
   }
 }
+
+.header > .containerLegacy {
+  
+  @media (max-width: 48em) {
+    height: 52px;
+  }
+
+  /* Desktop Sizes */
+  @media (min-width: 48em) {
+    height: 102px;
+  }
+}
+
+.containerLegacy {
+  background-color: #262626;
+  color: white;
+  /* Mobile Sizes */
+  @media (max-width: 48em) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Desktop Sizes */
+  @media (min-width: 48em) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .container {
   /* Mobile Sizes */
   @media (max-width: 48em) {
@@ -56,6 +85,14 @@
   padding: 10px 0px !important;
 }
 
+.tabNoncompactLegacy, .tabLegacyCompact {
+  color: white !important;
+}
+
+.tabLegacyCompact {
+  padding: 10px 0px !important;
+}
+
 .tab {
   position: absolute;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -76,6 +113,12 @@
   padding: 8px 15px 10px 15px !important;
 }
 
+.authLegacy {
+  padding: 0px 15px 0px 15px !important;
+  /* background-color: ; */
+  color: white !important;
+} 
+
 .mobile {
   /* Desktop Sizes */
   @media (min-width: 48em) {
@@ -89,3 +132,41 @@
     display: none !important;
   }
 }
+
+.desktopLegacy {
+  /* Mobile Sizes */
+  @media (max-width: 48em) {
+    display: none !important;
+  }
+  background-color: #262626;
+  color: white;
+}
+
+.navButton {
+  position: relative;
+  /* Ensure the button doesn't have a background that hides the underline */
+  background: transparent;
+  transition: color 200ms ease;
+}
+
+.navButton::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f26649;
+  /* This mirrors your Bootstrap transition */
+  transition: all 300ms ease;
+}
+
+/* Hover state and Active/Current state */
+.navButton:hover::before,
+.navButton[data-active="true"]::before {
+  left: 0;
+  width: 100%;
+}
+
+

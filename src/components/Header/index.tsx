@@ -153,37 +153,32 @@ export function Header({
                     padding={0}
                     withCloseButton={false}
                   >
+                    <Group gap="md" align="space-between" grow>
+                      {isAuthenticated && (
+                        <Button 
+                          variant="default" 
+                          component="a"
+                          href={myProfileUrl}
+                          aria-label="My profile"
+                          radius="md" 
+                          m={10}
+                          px={15} py={6}
+                        >
+                          My Profile
+                        </Button>
+                      )}
+                      <Button 
+                        onClick={onAuthClick} 
+                        variant="ala" 
+                        size="sm" 
+                        radius="md" 
+                        m={10}
+                        px={15} py={6}
+                      >
+                        {isAuthenticated ? "Sign out" : "Sign in"}
+                      </Button>
+                    </Group>
                     <Accordion variant="default" classNames={accordionClasses} defaultValue={'Authentication'}>
-                      <Accordion.Item value="Authentication">
-                        <Accordion.Control>Login & profile</Accordion.Control>
-                        <Accordion.Panel>
-                          <Group gap="md" align="space-between" grow>
-                            {isAuthenticated && (
-                              <Button 
-                                variant="default" 
-                                component="a"
-                                href={myProfileUrl}
-                                aria-label="My profile"
-                                m={10}
-                                px={15} py={6}
-                              >
-                                My Profile
-                              </Button>
-                            )}
-                            <Button 
-                              // className={classes.authLegacy} 
-                              onClick={onAuthClick} 
-                              variant="ala" 
-                              size="sm" 
-                              radius="md" 
-                              m={10}
-                              px={15} py={6}
-                            >
-                              {isAuthenticated ? "Sign out" : "Sign in"}
-                            </Button>
-                          </Group>
-                        </Accordion.Panel>
-                      </Accordion.Item>
                       {headerLegacyData.map((menu) => (
                         <SidebarItem key={menu.value} data={menu} />
                       ))}
@@ -291,36 +286,31 @@ export function Header({
         padding={0}
         withCloseButton={false}
       >
+        <Group gap="md" align="space-between" grow>
+          {isAuthenticated && (
+            <Button 
+              variant="default" 
+              component="a"
+              href={myProfileUrl}
+              aria-label="My profile"
+              m={10}
+              px={15} py={6}
+            >
+              My Profile
+            </Button>
+          )}
+          <Button 
+            onClick={onAuthClick} 
+            variant="ala" 
+            size="sm" 
+            radius="md" 
+            m={10}
+            px={15} py={6}
+          >
+            {isAuthenticated ? "Sign out" : "Sign in"}
+          </Button>
+        </Group>
         <Accordion variant="default" classNames={accordionClasses}>
-          <Accordion.Item value="Authentication">
-            <Accordion.Control>Login & profile</Accordion.Control>
-            <Accordion.Panel>
-              <Group gap="md" align="space-between" grow>
-                {isAuthenticated && (
-                  <Button 
-                    variant="default" 
-                    component="a"
-                    href={myProfileUrl}
-                    aria-label="My profile"
-                    m={10}
-                    px={15} py={6}
-                  >
-                    My Profile
-                  </Button>
-                )}
-                <Button 
-                  onClick={onAuthClick} 
-                  variant="ala" 
-                  size="sm" 
-                  radius="md" 
-                  m={10}
-                  px={15} py={6}
-                >
-                  {isAuthenticated ? "Sign out" : "Sign in"}
-                </Button>
-              </Group>
-            </Accordion.Panel>
-          </Accordion.Item>
           {headerData.map((panel) => (
             <SidebarItem key={panel.value} data={panel} />
           ))}

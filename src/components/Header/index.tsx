@@ -150,24 +150,22 @@ function MobileDrawer({ opened, close, isAuthenticated, onAuthClick, myProfileUr
     <Drawer
       className={classes.mobile}
       classNames={drawerClasses}
-      size={345}
+      size="min(350px, 90vw)"
       position="right"
       opened={opened}
       onClose={close}
       padding={0}
       withCloseButton={false}
     >
-      <Group gap="md" align="space-between" grow>
+      <Group gap="sm" justify="center" grow>
         {isAuthenticated && (
           <Button
             variant="default"
             component="a"
+            className={classes.mobileProfileButton}
             href={myProfileUrl}
             aria-label="My profile"
             radius={isLegacySkin ? "md" : undefined}
-            m={10}
-            px={15}
-            py={6}
           >
             My Profile
           </Button>
@@ -175,11 +173,9 @@ function MobileDrawer({ opened, close, isAuthenticated, onAuthClick, myProfileUr
         <Button
           onClick={onAuthClick}
           variant="ala"
+          className={classes.mobileSignInButton}
           size="sm"
           radius="md"
-          m={10}
-          px={15}
-          py={6}
         >
           {isAuthenticated ? "Sign out" : "Sign in"}
         </Button>

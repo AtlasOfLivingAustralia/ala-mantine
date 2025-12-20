@@ -11,13 +11,13 @@
   background-color: #262626;
   color: white;
 
-  @media (max-width: 67em) {
+  @media (max-width: 65em) {
     height: 52px;
     padding-left: 15px !important;
     padding-right: 15px !important;
   }
 
-  @media (min-width: 67em) {
+  @media (min-width: 65em) {
     height: 102px;
     padding-left: 20px !important;
     padding-right: 20px !important;
@@ -26,13 +26,13 @@
 
 .container {
   /* Mobile Sizes */
-  @media (max-width: 67em) {
+  @media (max-width: 65em) {
     padding-left: 15px !important;
     padding-right: 15px !important;
   }
 
   /* Desktop Sizes */
-  @media (min-width: 67em) {
+  @media (min-width: 65em) {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
@@ -40,7 +40,7 @@
 
 .group {
   /* Mobile Sizes */
-  @media (max-width: 67em) {
+  @media (max-width: 65em) {
     height: 52px;
     padding-top: 12px;
     padding-bottom: 13px;
@@ -48,7 +48,7 @@
   }
 
   /* Desktop Sizes */
-  @media (min-width: 67em) {
+  @media (min-width: 65em) {
     height: 102px;
     padding-top: 0;
     padding-bottom: 0;
@@ -59,7 +59,7 @@
 
 .groupCompact {
   /* Mobile Sizes */
-  @media (max-width: 67em) {
+  @media (max-width: 65em) {
     height: 52px;
     padding-top: 12px;
     padding-bottom: 13px;
@@ -67,13 +67,18 @@
   }
 
   /* Desktop Sizes */
-  @media (min-width: 67em) {
+  @media (min-width: 65em) {
     height: 102px;
     padding-top: 0;
     padding-bottom: 0;
     align-items: center;
     overflow: hidden;
   }
+}
+
+.mobileProfileButton, .mobileSignInButton {
+  padding: 6px 15px !important;
+  margin: 10px 16px !important;
 }
 
 .tabCompact {
@@ -117,26 +122,26 @@
 
 .mobile {
   /* Desktop Sizes */
-  @media (min-width: 67em) {
+  @media (min-width: 65em) {
     display: none !important;
   }
 }
 
 .desktop {
   /* Mobile Sizes */
-  @media (max-width: 67em) {
+  @media (max-width: 65em) {
     display: none !important;
   }
   
   /* Add responsive gap for medium screens */
-  @media (min-width: 67em) and (max-width: 90em) {
+  @media (min-width: 65em) and (max-width: 90em) {
     gap: 15px;
   }
 }
 
 .desktopLegacy {
   /* Mobile Sizes */
-  @media (max-width: 67em) {
+  @media (max-width: 65em) {
     display: none !important;
   }
   background-color: #262626;

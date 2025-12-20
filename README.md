@@ -44,7 +44,7 @@ or
 
 ### Local
 
-To enable live updating of ala-mantine changes in a client application, run the following commands.
+To enable live updating of `ala-mantine` changes in a client application, run the following commands.
 
 
 In the `ala-mantine` root directory, run:
@@ -65,6 +65,17 @@ yarn install --force
 ```
 
 This will restore the normal npm registry version.
+
+When a new version of `ala-mantine` is ready to be **published to npm**, run the following commands, noting that only Git releases should be published, so create the release first.
+
+```sh
+# 1. login will redirect you to npm site - you'll need an account and be a member of the ALA org
+npm login
+# 2.(optional)  if you haven't manually changed the version number in package.json, then update the version via:
+npm version [patch|minor|major] # pick one based on changes
+# 3. push changes to npm
+npm publish
+```
 
 <!-- [Yalc](https://github.com/wclr/yalc) is needed to use `ala-mantine` locally. See [here](https://github.com/wclr/yalc?tab=readme-ov-file#installation) for Yalc installation documentation.
 

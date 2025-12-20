@@ -7,45 +7,35 @@
   }
 }
 
-.header > .containerLegacy {
-  
+.containerLegacy {
+  background-color: #262626;
+  color: white;
+
   @media (max-width: 48em) {
     height: 52px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 
   /* Desktop Sizes */
   @media (min-width: 48em) {
     height: 102px;
-  }
-}
-
-.containerLegacy {
-  background-color: #262626;
-  color: white;
-  /* Mobile Sizes */
-  @media (max-width: 48em) {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  /* Desktop Sizes */
-  @media (min-width: 48em) {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 }
 
 .container {
   /* Mobile Sizes */
   @media (max-width: 48em) {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 
   /* Desktop Sizes */
   @media (min-width: 48em) {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 }
 

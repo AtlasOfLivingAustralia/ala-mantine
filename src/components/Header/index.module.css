@@ -11,14 +11,13 @@
   background-color: #262626;
   color: white;
 
-  @media (max-width: 48em) {
+  @media (max-width: 67em) {
     height: 52px;
     padding-left: 15px !important;
     padding-right: 15px !important;
   }
 
-  /* Desktop Sizes */
-  @media (min-width: 48em) {
+  @media (min-width: 67em) {
     height: 102px;
     padding-left: 20px !important;
     padding-right: 20px !important;
@@ -27,13 +26,13 @@
 
 .container {
   /* Mobile Sizes */
-  @media (max-width: 48em) {
+  @media (max-width: 67em) {
     padding-left: 15px !important;
     padding-right: 15px !important;
   }
 
   /* Desktop Sizes */
-  @media (min-width: 48em) {
+  @media (min-width: 67em) {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
@@ -41,7 +40,7 @@
 
 .group {
   /* Mobile Sizes */
-  @media (max-width: 48em) {
+  @media (max-width: 67em) {
     height: 52px;
     padding-top: 12px;
     padding-bottom: 13px;
@@ -49,25 +48,31 @@
   }
 
   /* Desktop Sizes */
-  @media (min-width: 48em) {
-    height: 107px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  @media (min-width: 67em) {
+    height: 102px;
+    padding-top: 0;
+    padding-bottom: 0;
+    align-items: center;
+    overflow: hidden; /* Prevent content from breaking out of container */
   }
 }
 
 .groupCompact {
   /* Mobile Sizes */
-  @media (max-width: 48em) {
+  @media (max-width: 67em) {
+    height: 52px;
     padding-top: 12px;
     padding-bottom: 13px;
     align-items: flex-end;
   }
 
   /* Desktop Sizes */
-  @media (min-width: 48em) {
-    padding-top: 15px;
-    padding-bottom: 0px;
+  @media (min-width: 67em) {
+    height: 102px;
+    padding-top: 0;
+    padding-bottom: 0;
+    align-items: center;
+    overflow: hidden;
   }
 }
 
@@ -101,31 +106,37 @@
 
 .auth {
   padding: 8px 15px 10px 15px !important;
+  flex-shrink: 0; /* Prevent auth buttons from shrinking */
 }
 
 .authLegacy {
   padding: 0px 15px 0px 15px !important;
-  /* background-color: ; */
   color: white !important;
+  flex-shrink: 0; /* Prevent auth buttons from shrinking */
 } 
 
 .mobile {
   /* Desktop Sizes */
-  @media (min-width: 48em) {
+  @media (min-width: 67em) {
     display: none !important;
   }
 }
 
 .desktop {
   /* Mobile Sizes */
-  @media (max-width: 48em) {
+  @media (max-width: 67em) {
     display: none !important;
+  }
+  
+  /* Add responsive gap for medium screens */
+  @media (min-width: 67em) and (max-width: 90em) {
+    gap: 15px;
   }
 }
 
 .desktopLegacy {
   /* Mobile Sizes */
-  @media (max-width: 48em) {
+  @media (max-width: 67em) {
     display: none !important;
   }
   background-color: #262626;
@@ -134,9 +145,11 @@
 
 .navButton {
   position: relative;
-  /* Ensure the button doesn't have a background that hides the underline */
   background: transparent;
   transition: color 200ms ease;
+  flex-shrink: 1; /* Allow nav buttons to compress if needed */
+  white-space: nowrap; /* Keep text on one line */
+  min-width: 0; /* Allow flex items to shrink below content size */
 }
 
 .navButton::before {
@@ -148,7 +161,6 @@
   width: 0;
   height: 2px;
   background-color: #f26649;
-  /* This mirrors your Bootstrap transition */
   transition: all 300ms ease;
 }
 
@@ -158,5 +170,3 @@
   left: 0;
   width: 100%;
 }
-
-

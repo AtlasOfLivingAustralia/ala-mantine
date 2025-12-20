@@ -8,6 +8,7 @@ import {
   Center,
   Container,
   Drawer,
+  Flex,
   Group,
   Menu,
   Stack,
@@ -312,49 +313,73 @@ export function Header({
   return (
     <Box className={classes.header}>
       <Container {...containerProps} className={containerClass}>
-        <Group justify="space-between" className={groupClass}>
-          <AtlasLogo homeUrl={homeUrl} isLegacySkin={isLegacySkin} />
-          <Group className={desktopClass} gap={isLegacySkin ? 10 : 30}>
-            {isLegacySkin ? (
-              <Stack align="flex-end" justify="flex-start" gap={5}>
-                <Group gap={25} mr={20}>
-                  <UtilityButtons
-                    toggleColorScheme={toggleColorScheme}
-                    onSearchClick={onSearchClick}
-                    isLegacySkin={isLegacySkin}
-                  />
-                  <AuthButtons
-                    isAuthenticated={isAuthenticated}
-                    onAuthClick={onAuthClick}
-                    myProfileUrl={myProfileUrl}
-                    isLegacySkin={isLegacySkin}
-                  />
-                </Group>
-                <LegacyNavigation />
-              </Stack>
-            ) : (
-              <>
+        {isLegacySkin ? (
+          <Flex
+            justify="space-between"
+            align="center"
+            wrap="nowrap"
+            className={groupClass}
+            style={{ overflow: 'hidden' }}
+          >
+            <AtlasLogo homeUrl={homeUrl} isLegacySkin={isLegacySkin} />
+            
+            <Flex
+              className={desktopClass}
+              direction="column"
+              align="flex-end"
+              justify="center"
+              gap={5}
+              style={{ flexShrink: 1, minWidth: 0 }}
+            >
+              <Group gap={25} mr={20} wrap="nowrap">
                 <UtilityButtons
                   toggleColorScheme={toggleColorScheme}
                   onSearchClick={onSearchClick}
+                  isLegacySkin={isLegacySkin}
                 />
                 <AuthButtons
                   isAuthenticated={isAuthenticated}
                   onAuthClick={onAuthClick}
                   myProfileUrl={myProfileUrl}
+                  isLegacySkin={isLegacySkin}
                 />
-              </>
-            )}
-          </Group>
+              </Group>
+              <LegacyNavigation />
+            </Flex>
 
-          <UnstyledButton
-            className={classes.mobile}
-            onClick={open}
-            aria-label="Open menu"
-          >
-            <MenuIcon />
-          </UnstyledButton>
-        </Group>
+            <UnstyledButton
+              className={classes.mobile}
+              onClick={open}
+              aria-label="Open menu"
+            >
+              <MenuIcon />
+            </UnstyledButton>
+          </Flex>
+        ) : (
+          <Group justify="space-between" className={groupClass}>
+            <AtlasLogo homeUrl={homeUrl} isLegacySkin={isLegacySkin} />
+            
+            <Group className={desktopClass} gap={30}>
+              <UtilityButtons
+                toggleColorScheme={toggleColorScheme}
+                onSearchClick={onSearchClick}
+              />
+              <AuthButtons
+                isAuthenticated={isAuthenticated}
+                onAuthClick={onAuthClick}
+                myProfileUrl={myProfileUrl}
+              />
+            </Group>
+
+            <UnstyledButton
+              className={classes.mobile}
+              onClick={open}
+              aria-label="Open menu"
+            >
+              <MenuIcon />
+            </UnstyledButton>
+          </Group>
+        )}
       </Container>
 
       {!isLegacySkin && (

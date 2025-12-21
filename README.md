@@ -26,7 +26,7 @@ This library requires the following peer dependencies in your dependant project:
 
 **~~NOTE: This package exports the Mantine theme and components as untransplied TypeScript, a toolchain/framework such as Vite/Next.js is needed to use it.~~**
 
-**NOTE: From version 1.0 onwards, this package exports transpiled JS code. This is a major change and may reqiure client apps to be aware of this.** 
+**NOTE: From version 1.0 onwards, this package exports transpiled JS code. This is a major change and may require client app changes.** 
 The reason for changing to transpiled JS, was to make the development process easier by enabling hot-linking of library and app for instand changes to be observed. 
 Its also worth noting that transpiled JS is the most common format puiblished to npm, and is the most reliable mechanism as well as being the "expected" format by client apps.
 

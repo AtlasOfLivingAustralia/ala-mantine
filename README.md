@@ -46,10 +46,9 @@ or
 
 `npm i @atlasoflivingaustralia/ala-mantine`
 
-### Local
+### Local Development
 
-To enable live updating of `ala-mantine` changes in a client application, run the following commands.
-
+To enable live updating of `ala-mantine` changes in a client application via `yarn link`, run the following commands.
 
 In the `ala-mantine` root directory, run:
 ```sh
@@ -70,30 +69,28 @@ yarn install --force
 
 This will restore the normal npm registry version.
 
-When a new version of `ala-mantine` is ready to be **published to npm**, run the following commands, noting that only Git releases should be published, so create the release first.
+Alternatively, you can use `yalc`, which is slower (requires push for each change) and necessitates the cache to be cleared regularly (`node_modules/.vite`). This is a useful sanity check after using `yarn link`, before pushing changes to NPM.
 
-```sh
-# 1. login will redirect you to npm site - you'll need an account and be a member of the ALA org
-npm login
-# 2.(optional)  if you haven't manually changed the version number in package.json, then update the version via:
-npm version [patch|minor|major] # pick one based on changes
-# 3. push changes to npm
-npm publish
-```
-
-<!-- [Yalc](https://github.com/wclr/yalc) is needed to use `ala-mantine` locally. See [here](https://github.com/wclr/yalc?tab=readme-ov-file#installation) for Yalc installation documentation.
+[Yalc](https://github.com/wclr/yalc) is needed to use `ala-mantine` locally. See [here](https://github.com/wclr/yalc?tab=readme-ov-file#installation) for Yalc installation documentation.
 
 1. Once installed, in the `ala-mantine` root folder, run `yalc publish`.
 2. In your dependant application, run `yalc add @atlasoflivingaustralia/ala-mantine`, followed by `yarn` to install it as a dependency.
 3. PostCSS is also required in your dependant application for the component library. Please see the installation intructions [here](https://mantine.dev/getting-started/#:~:text=Install%20PostCSS%20plugins%20and%20postcss%2Dpreset%2Dmantine%3A).
 
+### Publishing to NPM
+
 Once you've made changes to `ala-mantine`, run `yalc push` from the `ala-mantine` root folder to automatically push all changes to the dependent applications.
 
 Then, in your dependent applications, make sure to remove any cache (`.vite`, `.next` or equivalent) and re-run.
 
-To publish changes to NPM, you need to have a login for https://www.npmjs.com and be added to the ALA group (Ask Matt). Ensure that a new version number is set in package.json and create a new GH release for it, documenting the changes.
+To publish changes to NPM, you need to have a login for https://www.npmjs.com and be added to the ALA group (Ask Matt). Ensure that a new version number is set in `package.json` and create a new GH release for it, documenting the changes.
 
-Run the command `npm publish` and follow the prompts to login, etc.  -->
+```sh
+# 1. login will redirect you to npm site - you'll need an account and be a member of the ALA org
+npm login
+# 2. push changes to npm
+npm publish
+```
 
 ## Usage
 

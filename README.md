@@ -128,7 +128,43 @@ Don't forget to add the `@mantine/core/styles.css` import at the root of your ap
 
 This project additionaly provides several high-level components that are leveraged across multiple ALA applications, and can be utilised in your own project.
 
-For example, the <ConservationStatus /> component can be implemented like so:
+E.g., the ALA `<Header>` component can be used with either the 2026 "new" ALA skin or the previous "legacy" skin:
+
+```tsx
+import {
+  Header,
+  Footer
+} from '@atlasoflivingaustralia/ala-mantine';
+import { useAuth } from 'react-oidc-context';
+
+function App() {
+  def isLegacySkin = true // or leave blank to get default `false` value
+  def handleSignout = null; // needs implementing
+  const auth = useAuth();
+
+  return <Header
+      isAuthenticated={auth.isAuthenticated}
+      onAuthClick={
+        () => {
+        if (auth.isAuthenticated) {
+          handleSignout(auth);
+        } else {
+          auth.signinRedirect();
+        }
+      }}
+      homeUrl={import.meta.env.VITE_ALA_HOME_PAGE || ''}
+      onSearchClick={() => (window.location.href = 'https://bie.ala.org.au')}
+      fullWidth 
+      compact
+      myProfileUrl={import.meta.env.VITE_ALA_USER_PROFILE || ''}
+      isLegacySkin={isLegacySkin}
+    />
+}
+
+export default App;
+```
+
+Another example is the `<ConservationStatus>` component can be implemented like so:
 
 ```tsx
 import { ConservationStatus } from "@atlasoflivingaustralia/ala-mantine";

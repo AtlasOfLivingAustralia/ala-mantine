@@ -7,22 +7,33 @@
   }
 
   /* Mobile Sizes */
-  @media (max-width: 48em) {
-    width: 186px;
-    height: 27.014px;
-    background-size: 186px 27.014px;
+  @media (max-width: 65em) {
+    width: 235px;
+    height: 35px;
+    background-size: 235px 35px;
   }
 
   /* Desktop Sizes */
-  @media (min-width: 48em) {
+  @media (min-width: 65em) {
     width: 324px;
     height: 47.6px;
     background-size: 324px 47.6px;
+    /* border: 1px solid red */
   }
 
   .logoLink {
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
+  }
+}
+
+.image.logoLegacy {
+  background-image: url("../../static/ala-dark.svg");
+  /* legacy */
+  @media (min-width: 65em) {
+    width: 335px;
+    height: 48px;
+    background-size: 335px 48px;
   }
 }

@@ -1,0 +1,171 @@
+[
+  {
+    "value": "records",
+    "title": "Search & analyse",
+    "description": "Discover Australia's biodiversity through species, records, datasets, spatial analysis and natural history collections.",
+    "colOneLinks": [
+      {
+        "href": "https://bie.ala.org.au/",
+        "text": "Search species"
+      },
+      {
+        "href": "https://biocache.ala.org.au/search#tab_simpleSearch",
+        "text": "Search and download records"
+      },
+      {
+        "href": "https://collections.ala.org.au/datasets",
+        "text": "Search datasets"
+      }
+    ],
+    "colTwoLinks": [
+      {
+        "href": "https://spatial.ala.org.au/",
+        "text": "Spatial analysis (Spatial Portal"
+      },
+      {
+        "href": "https://biocache.ala.org.au/explore/your-area",
+        "text": "Explore your area"
+      },
+      {
+        "href": "https://collections.ala.org.au/",
+        "text": "Explore natural history collection"
+      }
+    ]
+  },
+  {
+    "value": "contribute",
+    "title": "Contribute",
+    "description": "Contribute your biodiversity data to the ALA through datasets, species lists, citizen science projects and more.",
+    "colOneLinks": [
+      {
+        "href": "https://support.ala.org.au/support/solutions/articles/6000261427-sharing-a-dataset-with-the-ala",
+        "text": "Share your dataset"
+      },
+      {
+        "href": "https://lists.ala.org.au/",
+        "text": "Upload species lists"
+      }
+    ],
+    "colTwoLinks": [
+      {
+        "href": "https://www.ala.org.au/home/record-a-sighting/",
+        "text": "Record a sighting"
+      },
+      {
+        "href": "https://volunteer.ala.org.au/",
+        "text": "Transcribe & digitise (DigiVol)"
+      },
+      {
+        "href": "https://biocollect.ala.org.au/acsa",
+        "text": "Discover citizen science projects"
+      }
+    ]
+  },
+  {
+    "value": "resources",
+    "title": "Resources",
+    "description": "Find ALA publications, logos, data citations, and explore our Data Mobilisation Program and ALA Labs.",
+    "colOneLinks": [
+      {
+        "href": "https://www.test.ala.org.au/publications/",
+        "text": "Brochures and reports"
+      },
+      {
+        "href": "https://www.test.ala.org.au/ala-logo-and-identity/",
+        "text": "ALA logo and identity"
+      },
+      {
+        "href": "https://www.test.ala.org.au/ala-cited-publications/",
+        "text": "ALA-cited publications"
+      },
+      {
+        "href": "https://www.test.ala.org.au/abdmp/",
+        "text": "Data Mobilisation Program"
+      },
+      {
+        "href": "https://labs.ala.org.au/",
+        "text": "ALA Labs"
+      }
+    ]
+  },
+  {
+    "value": "about",
+    "title": "About",
+    "description": "Access and interrogate data in the ALA using R or Python, and learn from data visualisation case studies. Explore our API documentation portal for developers.",
+    "colOneLinks": [
+      {
+        "href": "https://www.test.ala.org.au/about-ala/",
+        "text": "About us"
+      },
+      {
+        "href": "https://www.test.ala.org.au/governance",
+        "text": "Governance"
+      },
+      {
+        "href": "https://www.test.ala.org.au/blog/",
+        "text": "News & media"
+      },
+      {
+        "href": "https://www.test.ala.org.au/careers/",
+        "text": "Careers"
+      },
+      {
+        "href": "https://www.test.ala.org.au/internships/",
+        "text": "Internships"
+      },
+      {
+        "href": "https://www.test.ala.org.au/contact-us/",
+        "text": "Contact us"
+      }
+    ],
+    "colTwoLinks": [
+      {
+        "href": "https://www.test.ala.org.au/current-projects/",
+        "text": "Current projects"
+      },
+      {
+        "href": "https://living-atlases.gbif.org/",
+        "text": "International Living Atlases"
+      },
+      {
+        "href": "https://www.test.ala.org.au/indigenous-ecological-knowledge/",
+        "text": "Indigenous ecological knowledge"
+      },
+      {
+        "href": "https://www.test.ala.org.au/sites-and-services/",
+        "text": "All sites, services & tools"
+      }
+    ]
+  },
+  {
+    "value": "help",
+    "title": "Help",
+    "description": "Find answers to common questions about using the ALA, data citation, and how to contact our support team.",
+    "colOneLinks": [
+      {
+        "href": "https://support.ala.org.au/support/home",
+        "text": "Browse all articles (FAQs)"
+      },
+      {
+        "href": "https://support.ala.org.au/support/solutions/6000137994",
+        "text": "ALA Data help"
+      },
+      {
+        "href": "https://support.ala.org.au/support/solutions/6000138053",
+        "text": "ALA Tools & Apps help"
+      },
+      {
+        "href": "https://support.ala.org.au/support/solutions/6000138349",
+        "text": "ALA Spatial Portal help"
+      },
+      {
+        "href": "https://support.ala.org.au/support/solutions/articles/6000261662-citing-the-ala",
+        "text": "How to cite the ALA"
+      },
+      {
+        "href": "https://www.test.ala.org.au/contact-us/",
+        "text": "Contact us"
+      }
+    ]
+  }
+]

@@ -7,10 +7,10 @@ type AtlasLogoProps = React.DetailedHTMLProps<
   HTMLDivElement
 >;
 
-export function AtlasLogo({ homeUrl, ...props }: AtlasLogoProps & { homeUrl?: string }): React.ReactElement {
+export function AtlasLogo({ homeUrl, isLegacySkin = false, ...props }: AtlasLogoProps & { homeUrl?: string; isLegacySkin?: boolean }): React.ReactElement {
   const content = (
     <div
-      className={`${classes.image} ${props.className || ""}`}
+      className={`${classes.image} ${isLegacySkin ? classes.logoLegacy : ""} ${props.className || ""}`}
       {...props}
     ></div>
   );

@@ -12,7 +12,7 @@
   color: white;
 
   @media (max-width: 65em) {
-    height: 52px;
+    height: 64px;
     padding-left: 15px !important;
     padding-right: 15px !important;
   }
@@ -59,8 +59,8 @@
 
 .groupCompact {
   /* Mobile Sizes */
-  @media (max-width: 65em) {
-    height: 52px;
+  @media (max-width: 47em) {
+    height: 55px;
     padding-top: 12px;
     padding-bottom: 13px;
     align-items: flex-end;

@@ -8,9 +8,9 @@
 
   /* Mobile Sizes */
   @media (max-width: 65em) {
-    width: 186px;
-    height: 27.014px;
-    background-size: 186px 27.014px;
+    width: 235px;
+    height: 35px;
+    background-size: 235px 35px;
   }
 
   /* Desktop Sizes */

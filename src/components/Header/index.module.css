@@ -59,11 +59,19 @@
 
 .groupCompact {
   /* Mobile Sizes */
-  @media (max-width: 47em) {
+  @media (max-width: 48em) {
     height: 55px;
-    padding-top: 12px;
-    padding-bottom: 13px;
+    padding-top: 18px;
+    padding-bottom: 8px;
     align-items: flex-end;
+  }
+
+  /* Tablet/Medium Sizes */
+  @media (min-width: 48em) and (max-width: 65em) {
+    height: 70px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+    align-items: center;
   }
 
   /* Desktop Sizes */

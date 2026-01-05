@@ -13,12 +13,18 @@
     background-size: 235px 35px;
   }
 
+  /* Tablet/Medium Sizes */
+  @media (min-width: 48em) and (max-width: 65em) {
+    width: 280px;
+    height: 41px;
+    background-size: 280px 41px;
+  }
+
   /* Desktop Sizes */
   @media (min-width: 65em) {
     width: 324px;
     height: 47.6px;
     background-size: 324px 47.6px;
-    /* border: 1px solid red */
   }
 
   .logoLink {
@@ -31,9 +37,26 @@
 .image.logoLegacy {
   background-image: url("../../static/ala-dark.svg");
   /* legacy */
+  
+  /* Mobile Sizes */
+  @media (max-width: 65em) {
+    width: 235px;
+    height: 35px;
+    background-size: 235px 35px;
+  }
+
+  /* Tablet/Medium Sizes */
+  @media (min-width: 48em) and (max-width: 65em) {
+    width: 280px;
+    height: 41px;
+    background-size: 280px 41px;
+  }
+
+  /* Desktop Sizes */
   @media (min-width: 65em) {
-    width: 335px;
-    height: 48px;
-    background-size: 335px 48px;
+    margin-left: 5px;
+    width: 345px;
+    height: 50px;
+    background-size: 345px 50px;
   }
 }

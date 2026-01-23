@@ -10,6 +10,16 @@ export default defineConfig({
       include: ['src'],
       insertTypesEntry: true,
       rollupTypes: true,
+      outDir: 'dist',
+      entryRoot: 'src',
+      // This should force .d.ts extension
+      beforeWriteFile: (filePath, content) => {
+        // Change .d.mts to .d.ts
+        return {
+          filePath: filePath.replace('.d.mts', '.d.ts'),
+          content
+        };
+      }
     })
   ],
   build: {

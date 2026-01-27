@@ -1,6 +1,6 @@
 {
   "name": "@atlasoflivingaustralia/ala-mantine",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/index.mjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -10,6 +10,8 @@
       "import": "./dist/index.mjs",
       "default": "./dist/index.mjs"
     },
+    "./styles": "./dist/index.css",
+    "./dist/index.css": "./dist/index.css",
     "./package.json": "./package.json"
   },
   "files": [

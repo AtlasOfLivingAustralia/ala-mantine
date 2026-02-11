@@ -32,6 +32,7 @@ import drawerClasses from "./classes/Drawer.module.css";
 import headerData from "./header.json";
 import headerLegacyData from "./headerLegacy.json";
 import { SidebarItem } from "./SidebarItem";
+import { Sign } from "crypto";
 
 interface HeaderProps {
   onAuthClick?: React.MouseEventHandler<HTMLButtonElement>;
@@ -63,6 +64,7 @@ function UtilityButtons({ toggleColorScheme, onSearchClick, isLegacySkin }: Util
       <UnstyledButton
         onClick={toggleColorScheme}
         aria-label="Toggle colour scheme"
+        className={isLegacySkin ? classes.authLegacy : undefined}
       >
         <Center>
           <ThemeIcon />
@@ -71,6 +73,7 @@ function UtilityButtons({ toggleColorScheme, onSearchClick, isLegacySkin }: Util
       <UnstyledButton
         onClick={onSearchClick}
         aria-label="Search the Atlas of Living Australia"
+        className={isLegacySkin ? classes.authLegacy : undefined}
       >
         <Center>
           <SearchIcon size={isLegacySkin ? 16 : undefined} />
@@ -80,6 +83,7 @@ function UtilityButtons({ toggleColorScheme, onSearchClick, isLegacySkin }: Util
         component="a"
         href="https://www.ala.org.au/contact-us/"
         aria-label="Contact us"
+        className={isLegacySkin ? classes.authLegacy : undefined}
       >
         <Text fw={500} c={isLegacySkin ? "white" : undefined}>
           Contact Us
@@ -105,15 +109,23 @@ interface AuthButtonsProps {
 function AuthButtons({ isAuthenticated, onAuthClick, myProfileUrl, isLegacySkin }: AuthButtonsProps) {
   return (
     <>
+      <div style={{ 
+        width: '1px',
+        minWidth: '1px',
+        height: 'auto',
+        alignSelf: 'stretch',
+        background: 'rgba(255, 255, 255, 0.5)',
+        flexShrink: 0
+      }} />
       {isAuthenticated && (
         <UnstyledButton
           className={isLegacySkin ? classes.authLegacy : classes.auth}
           component="a"
           href={myProfileUrl}
-          aria-label="My profile"
+          aria-label="Profile"
         >
           <Text fw={500} c={isLegacySkin ? "white" : undefined}>
-            My Profile
+            Profile
           </Text>
         </UnstyledButton>
       )}
@@ -123,7 +135,7 @@ function AuthButtons({ isAuthenticated, onAuthClick, myProfileUrl, isLegacySkin 
         variant={isLegacySkin ? "ala" : undefined}
         size={isLegacySkin ? "sm" : "md"}
       >
-        {isAuthenticated ? "Sign out" : "Sign in"}
+        {isAuthenticated ? (isLegacySkin ? "Logout" : "Sign out") : (isLegacySkin ? "Login" : "Sign in")}
       </Button>
     </>
   );
@@ -164,10 +176,10 @@ function MobileDrawer({ opened, close, isAuthenticated, onAuthClick, myProfileUr
             component="a"
             className={classes.mobileProfileButton}
             href={myProfileUrl}
-            aria-label="My profile"
+            aria-label="Profile"
             radius={isLegacySkin ? "md" : undefined}
           >
-            My Profile
+            Profile
           </Button>
         )}
         <Button
@@ -327,7 +339,7 @@ export function Header({
               gap={5}
               style={{ flexShrink: 1, minWidth: 0 }}
             >
-              <Group gap={25} mr={20} wrap="nowrap">
+              <Group gap={10} mr={20} wrap="nowrap">
                 <UtilityButtons
                   toggleColorScheme={toggleColorScheme}
                   onSearchClick={onSearchClick}

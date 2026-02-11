@@ -10,7 +10,7 @@
       },
       {
         "href": "https://biocache.ala.org.au/search#tab_simpleSearch",
-        "text": "Search and download records"
+        "text": "Search & download records"
       },
       {
         "href": "https://collections.ala.org.au/datasets",
@@ -28,7 +28,7 @@
       },
       {
         "href": "https://collections.ala.org.au/",
-        "text": "Explore natural history collection"
+        "text": "Explore natural history collections"
       }
     ]
   },
@@ -43,7 +43,7 @@
       },
       {
         "href": "https://lists.ala.org.au/",
-        "text": "Upload species lists"
+        "text": "Upload species list"
       }
     ],
     "colTwoLinks": [
@@ -71,12 +71,12 @@
         "text": "Brochures and reports"
       },
       {
-        "href": "https://www.test.ala.org.au/ala-logo-and-identity/",
-        "text": "ALA logo and identity"
-      },
-      {
         "href": "https://www.test.ala.org.au/ala-cited-publications/",
         "text": "ALA-cited publications"
+      },
+      {
+        "href": "https://www.test.ala.org.au/ala-logo-and-identity/",
+        "text": "ALA logo and identity"
       },
       {
         "href": "https://www.test.ala.org.au/abdmp/",

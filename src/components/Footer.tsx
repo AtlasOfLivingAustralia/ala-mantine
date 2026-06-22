@@ -68,8 +68,8 @@ export function Footer({fullWidth = false}: {fullWidth?: boolean}): React.ReactE
               <Anchor href="https://www.ala.org.au/blog/" fw="bold">
                 News & updates
               </Anchor>
-              <Anchor href="https://www.ala.org.au/blog/" fw="bold">
-                Help and resources
+              <Anchor href="https://support.ala.org.au/support/home" fw="bold">
+                Help & resources
               </Anchor>
               <Group gap={30}>
                 <UnstyledButton

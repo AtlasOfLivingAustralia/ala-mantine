@@ -129,10 +129,26 @@
 } 
 
 .mobile {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+
   /* Desktop Sizes */
   @media (min-width: 65em) {
     display: none !important;
   }
+}
+
+.mobileUtilityGroup {
+  flex-shrink: 0;
+}
+
+.mobileMenuButton {
+  margin-left: 8px;
+  margin-top: 4px;
+  flex-shrink: 0;
 }
 
 .desktop {

@@ -50,6 +50,7 @@ interface UtilityButtonsProps {
   toggleColorScheme: () => void;
   onSearchClick?: React.MouseEventHandler<HTMLButtonElement>;
   isLegacySkin?: boolean;
+  showContactUs?: boolean;
 }
 
 /**
@@ -58,12 +59,18 @@ interface UtilityButtonsProps {
  * @param param0 
  * @returns 
  */
-function UtilityButtons({ toggleColorScheme, onSearchClick, isLegacySkin }: UtilityButtonsProps) {
+function UtilityButtons({
+  toggleColorScheme,
+  onSearchClick,
+  isLegacySkin,
+  showContactUs = true,
+}: UtilityButtonsProps) {
   return (
     <>
       <UnstyledButton
         onClick={toggleColorScheme}
         aria-label="Toggle colour scheme"
+        title="Toggle colour scheme"
         className={isLegacySkin ? classes.authLegacy : undefined}
       >
         <Center>
@@ -73,22 +80,26 @@ function UtilityButtons({ toggleColorScheme, onSearchClick, isLegacySkin }: Util
       <UnstyledButton
         onClick={onSearchClick}
         aria-label="Search the Atlas of Living Australia"
+        title="Search the Atlas of Living Australia"
         className={isLegacySkin ? classes.authLegacy : undefined}
       >
         <Center>
           <SearchIcon size={isLegacySkin ? 16 : undefined} />
         </Center>
       </UnstyledButton>
-      <UnstyledButton
-        component="a"
-        href="https://www.ala.org.au/contact-us/"
-        aria-label="Contact us"
-        className={isLegacySkin ? classes.authLegacy : undefined}
-      >
-        <Text fw={500} c={isLegacySkin ? "white" : undefined}>
-          Contact Us
-        </Text>
-      </UnstyledButton>
+      {showContactUs && (
+        <UnstyledButton
+          component="a"
+          href="https://www.ala.org.au/contact-us/"
+          aria-label="Contact us"
+          title="Contact us"
+          className={isLegacySkin ? classes.authLegacy : undefined}
+        >
+          <Text fw={500} c={isLegacySkin ? "white" : undefined}>
+            Contact Us
+          </Text>
+        </UnstyledButton>
+      )}
     </>
   );
 }
@@ -355,13 +366,19 @@ export function Header({
               <LegacyNavigation />
             </Flex>
 
-            <UnstyledButton
-              className={classes.mobile}
-              onClick={open}
-              aria-label="Open menu"
-            >
-              <MenuIcon />
-            </UnstyledButton>
+            <Flex className={classes.mobile} align="center" wrap="nowrap">
+              <Group gap={4} wrap="nowrap" className={classes.mobileUtilityGroup}>
+                <UtilityButtons
+                  toggleColorScheme={toggleColorScheme}
+                  onSearchClick={onSearchClick}
+                  isLegacySkin={isLegacySkin}
+                  showContactUs={false}
+                />
+              </Group>
+              <UnstyledButton className={classes.mobileMenuButton} onClick={open} aria-label="Open menu">
+                <MenuIcon />
+              </UnstyledButton>
+            </Flex>
           </Flex>
         ) : (
           <Group justify="space-between" className={groupClass}>
@@ -379,13 +396,11 @@ export function Header({
               />
             </Group>
 
-            <UnstyledButton
-              className={classes.mobile}
-              onClick={open}
-              aria-label="Open menu"
-            >
-              <MenuIcon />
-            </UnstyledButton>
+            <Flex className={classes.mobile} align="center" wrap="nowrap">
+              <UnstyledButton className={classes.mobileMenuButton} onClick={open} aria-label="Open menu">
+                <MenuIcon />
+              </UnstyledButton>
+            </Flex>
           </Group>
         )}
       </Container>

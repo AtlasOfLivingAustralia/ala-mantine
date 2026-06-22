@@ -129,12 +129,6 @@
 } 
 
 .mobile {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  flex-wrap: nowrap;
-  white-space: nowrap;
-
   /* Desktop Sizes */
   @media (min-width: 65em) {
     display: none !important;

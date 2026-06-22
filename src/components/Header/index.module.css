@@ -135,6 +135,16 @@
   }
 }
 
+.mobileUtilityGroup {
+  flex-shrink: 0;
+}
+
+.mobileMenuButton {
+  margin-left: 8px;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
 .desktop {
   /* Mobile Sizes */
   @media (max-width: 65em) {

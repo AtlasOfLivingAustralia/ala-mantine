@@ -15,8 +15,8 @@
 
   /* Desktop Sizes */
   @media (min-width: 48em) {
-    width: 69.1px;
-    height: 36.4px;
-    background-size: 69.1px 36.4px;
+    width: 98px;
+    height: 50px;
+    background-size: 98px 50px;
   }
 }

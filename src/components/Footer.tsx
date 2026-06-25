@@ -56,7 +56,7 @@ export function Footer({fullWidth = false}: {fullWidth?: boolean}): React.ReactE
                 </Anchor>
                 .
               </Text>
-              <Group gap={30}>
+              <Group gap={20}>
                 <NcrisLogo />
                 <CsiroLogo />
                 <GbifLogo />

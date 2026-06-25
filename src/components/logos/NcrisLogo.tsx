@@ -1,6 +1,7 @@
 import React from "react";
 
-import classes from "./NcrisLogo.module.css";
+// import classes from "./NcrisLogo.module.css";
+import classes from "./Ncris20Logo.module.css";
 
 type NcrisLogoProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLDivElement>,

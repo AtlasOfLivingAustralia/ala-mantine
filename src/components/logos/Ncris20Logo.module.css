@@ -1,0 +1,22 @@
+.image {
+  @mixin light {
+    background-image: url("../../static/ncris-20-light.svg");
+  }
+  @mixin dark {
+    background-image: url("../../static/ncris-20-dark.svg");
+  }
+
+  /* Mobile Sizes */
+  @media (max-width: 48em) {
+    width: 94px;
+    height: 50px;
+    background-size: 94px 50px;
+  }
+
+  /* Desktop Sizes */
+  @media (min-width: 48em) {
+    width: 189px;
+    height: 100px;
+    background-size: 189px 100px;
+  }
+}

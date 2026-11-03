@@ -67,19 +67,19 @@
     "description": "Find ALA publications, logos, data citations, and explore our Data Mobilisation Program and ALA Labs.",
     "colOneLinks": [
       {
-        "href": "https://www.test.ala.org.au/publications/",
+        "href": "https://www.ala.org.au/publications/",
         "text": "Brochures and reports"
       },
       {
-        "href": "https://www.test.ala.org.au/ala-cited-publications/",
+        "href": "https://www.ala.org.au/ala-cited-publications/",
         "text": "ALA-cited publications"
       },
       {
-        "href": "https://www.test.ala.org.au/ala-logo-and-identity/",
+        "href": "https://www.ala.org.au/ala-logo-and-identity/",
         "text": "ALA logo and identity"
       },
       {
-        "href": "https://www.test.ala.org.au/abdmp/",
+        "href": "https://www.ala.org.au/abdmp/",
         "text": "Data Mobilisation Program"
       },
       {
@@ -94,33 +94,33 @@
     "description": "Access and interrogate data in the ALA using R or Python, and learn from data visualisation case studies. Explore our API documentation portal for developers.",
     "colOneLinks": [
       {
-        "href": "https://www.test.ala.org.au/about-ala/",
+        "href": "https://www.ala.org.au/about-ala/",
         "text": "About us"
       },
       {
-        "href": "https://www.test.ala.org.au/governance",
+        "href": "https://www.ala.org.au/governance/",
         "text": "Governance"
       },
       {
-        "href": "https://www.test.ala.org.au/blog/",
+        "href": "https://www.ala.org.au/blog/",
         "text": "News & media"
       },
       {
-        "href": "https://www.test.ala.org.au/careers/",
+        "href": "https://www.ala.org.au/careers/",
         "text": "Careers"
       },
       {
-        "href": "https://www.test.ala.org.au/internships/",
+        "href": "https://www.ala.org.au/internships/",
         "text": "Internships"
       },
       {
-        "href": "https://www.test.ala.org.au/contact-us/",
+        "href": "https://www.ala.org.au/contact-us/",
         "text": "Contact us"
       }
     ],
     "colTwoLinks": [
       {
-        "href": "https://www.test.ala.org.au/current-projects/",
+        "href": "https://www.ala.org.au/current-projects/",
         "text": "Current projects"
       },
       {
@@ -128,11 +128,11 @@
         "text": "International Living Atlases"
       },
       {
-        "href": "https://www.test.ala.org.au/indigenous-ecological-knowledge/",
+        "href": "https://www.ala.org.au/indigenous-ecological-knowledge/",
         "text": "Indigenous ecological knowledge"
       },
       {
-        "href": "https://www.test.ala.org.au/sites-and-services/",
+        "href": "https://www.ala.org.au/sites-and-services/",
         "text": "All sites, services & tools"
       }
     ]
@@ -163,7 +163,7 @@
         "text": "How to cite the ALA"
       },
       {
-        "href": "https://www.test.ala.org.au/contact-us/",
+        "href": "https://www.ala.org.au/contact-us/",
         "text": "Contact us"
       }
     ]
